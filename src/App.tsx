@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
-import { APP_TITLE } from "./constants";
+import { NAME } from "./constants";
 import AppTitle from "./components/app/AppTitle";
 import Navbar from "./components/NavBar/Navbar";
 
 function App() {
   return (
     <>
-      <AppTitle title={APP_TITLE} />
+      <AppTitle title={NAME} />
       <Navbar />
       <Outlet />
     </>
