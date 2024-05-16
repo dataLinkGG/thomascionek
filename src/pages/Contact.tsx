@@ -17,7 +17,7 @@ const Contact = () => {
           <div>
             <img
               className="qr-code"
-              src="assets/qr_black_white_rounded.png"
+              src="/src/assets/qr_black_white_rounded.png"
               alt=""
             />
           </div>
