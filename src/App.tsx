@@ -10,8 +10,8 @@ function App() {
     <div className="container">
       <AppTitle title={NAME} />
       <Navbar />
-      <Outlet />
       <Home />
+      <Outlet />
     </div>
   );
 }

@@ -7,23 +7,23 @@ import { Home, About, Contact, Experience } from "./pages";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/thomascionek/",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/thomascionek/",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "/thomascionek/about",
         element: <About />,
       },
       {
-        path: "/contact",
+        path: "/thomascionek/contact",
         element: <Contact />,
       },
       {
-        path: "/experience",
+        path: "/thomascionek/experience",
         element: <Experience />,
       },
     ],

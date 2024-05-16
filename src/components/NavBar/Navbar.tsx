@@ -29,22 +29,22 @@ const Nav = (): JSX.Element => {
             </div>
             <ul className={`${styles.menuLinks} ${isOpen ? styles.open : ""}`}>
               <li>
-                <a href="/" onClick={toggleMenu}>
+                <a href="thomascionek/" onClick={toggleMenu}>
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about" onClick={toggleMenu}>
+                <a href="thomascionek/about" onClick={toggleMenu}>
                   About
                 </a>
               </li>
               <li>
-                <a href="/experience" onClick={toggleMenu}>
+                <a href="thomascionek/experience" onClick={toggleMenu}>
                   Experience
                 </a>
               </li>
               <li>
-                <a href="/contact" onClick={toggleMenu}>
+                <a href="thomascionek/contact" onClick={toggleMenu}>
                   Contact
                 </a>
               </li>
@@ -57,16 +57,16 @@ const Nav = (): JSX.Element => {
           <div>
             <ul className={styles.navLinks}>
               <li>
-                <a href="/">Home</a>
+                <a href="/thomascionek/">Home</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a href="/thomascionek/about/">About</a>
               </li>
               <li>
-                <a href="/experience">Experience</a>
+                <a href="/thomascionek/experience/">Experience</a>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                <a href="/thomascionek/contact/">Contact</a>
               </li>
             </ul>
           </div>
