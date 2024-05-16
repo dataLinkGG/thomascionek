@@ -22,7 +22,7 @@ const ProfileSection: React.FC = () => {
         {isMobile ? undefined : (
           <div className="section__pic-container">
             <img
-              src="/src/assets/profile-pic.jpg"
+              src="thomascionek/src/assets/profile-pic.jpg"
               alt={`${NAME} profile picture`}
               className="pic"
             />
@@ -39,7 +39,7 @@ const ProfileSection: React.FC = () => {
               size={"large"}
               icon={<DownloadOutlined />}
               onClick={() => {
-                window.open("/src/assets/CV_Thomas_Cionek_EN.pdf");
+                window.open("thomascionek/src/assets/CV_Thomas_Cionek_EN.pdf");
               }}
             >
               Download CV
