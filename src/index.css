@@ -141,6 +141,7 @@ a:hover {
 /* SECTIONS */
 
 section {
+  display: flex;
   padding: 4rem;
   height: 100vh;
   box-sizing: border-box;
@@ -177,7 +178,7 @@ section {
   filter: grayscale(0.7);
 }
 
-.picContainerr {
+.section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
@@ -208,7 +209,7 @@ section {
   text-align: center;
 }
 
-#socialsContainer {
+#socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -224,7 +225,7 @@ section {
 
 /* BUTTONS */
 
-.btnContainer {
+.btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
