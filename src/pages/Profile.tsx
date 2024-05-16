@@ -10,7 +10,7 @@ import profilePic from "../assets/profile-pic.jpg";
 
 const ProfileSection: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
-  const cvThomasPath = "../assets/CV_Thomas_Cionek_EN.pdf";
+  const cvThomasPath = "./CV_Thomas_Cionek_EN.pdf";
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1400);
@@ -41,7 +41,7 @@ const ProfileSection: React.FC = () => {
               size={"large"}
               icon={<DownloadOutlined />}
               onClick={() => {
-                window.open(cvThomasPath);
+                window.open(cvThomasPath, "_blank");
               }}
             >
               Download CV
