@@ -24,7 +24,7 @@ const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
   return (
     <article>
       <img
-        src={icon || "src/assets/checkmark.png"}
+        src={icon || "thomascionek/assets/checkmark.png"}
         alt={`Experience in ${name}`}
         className={styles.icon}
       />
