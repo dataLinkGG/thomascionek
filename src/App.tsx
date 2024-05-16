@@ -1,14 +1,17 @@
-import { Outlet } from "react-router-dom";
-import { NAME } from "./constants";
-import AppTitle from "./components/app/AppTitle";
-import Navbar from "./components/NavBar/Navbar";
+// import { Outlet } from "react-router-dom";
+// import { NAME } from "./constants";
+// import AppTitle from "./components/app/AppTitle";
+// import Navbar from "./components/NavBar/Navbar";
+
+import { Home } from "./pages";
 
 function App() {
   return (
     <div className="container">
-      <AppTitle title={NAME} />
+      {/* <AppTitle title={NAME} />
       <Navbar />
-      <Outlet />
+      <Outlet /> */}
+      <Home />
     </div>
   );
 }
