@@ -6,9 +6,11 @@ import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import ContactInfo from "../components/ContactInfo/ContactInfo";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN, NAME, ROLE } from "../constants";
+import profilePic from "../assets/profile-pic.jpg";
 
 const ProfileSection: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
+  const cvThomasPath = "../assets/CV_Thomas_Cionek_EN.pdf";
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1400);
@@ -22,7 +24,7 @@ const ProfileSection: React.FC = () => {
         {isMobile ? undefined : (
           <div className="section__pic-container">
             <img
-              src="thomascionek/assets/profile-pic.jpg"
+              src={profilePic}
               alt={`${NAME} profile picture`}
               className="pic"
             />
@@ -39,7 +41,7 @@ const ProfileSection: React.FC = () => {
               size={"large"}
               icon={<DownloadOutlined />}
               onClick={() => {
-                window.open("thomascionek/assets/CV_Thomas_Cionek_EN.pdf");
+                window.open(cvThomasPath);
               }}
             >
               Download CV

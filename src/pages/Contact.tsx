@@ -1,5 +1,6 @@
 import { Button, Tooltip } from "antd";
 import { WHATSAPP } from "../constants";
+import qr_code from "../assets/qr_black_white_rounded.png";
 
 const Contact = () => {
   return (
@@ -15,11 +16,7 @@ const Contact = () => {
           }}
         >
           <div>
-            <img
-              className="qr-code"
-              src="thomascionek/assets/qr_black_white_rounded.png"
-              alt=""
-            />
+            <img className="qr-code" src={qr_code} alt="" />
           </div>
         </Button>
         <br /> {/* just put some element so the tooltip apears in the middle */}
