@@ -1,22 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { DownloadOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
-// import { DownOutlined } from "@ant-design/icons";
 import ContactInfo from "../components/ContactInfo/ContactInfo";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN, NAME, ROLE } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
 
-const ProfileSection: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
-  const cvThomasPath = "./CV_Thomas_Cionek_EN.pdf";
+type ProfileProps = {
+  isMobile: boolean;
+};
 
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 1400);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
+  const cvThomasPath = "./CV_Thomas_Cionek_EN.pdf";
 
   return (
     <section>
@@ -60,9 +56,8 @@ const ProfileSection: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* <DownOutlined /> */}
     </section>
   );
 };
 
-export default ProfileSection;
+export default Profile;

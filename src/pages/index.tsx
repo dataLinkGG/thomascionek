@@ -4,4 +4,4 @@ import Contact from "./Contact.tsx";
 import Experience from "./Experience.tsx";
 import Profile from "./Profile.tsx";
 
-export { Home, About, Contact, Experience, Profile };
+export { Home, About, Contact, Experience, Profile as Profile };
