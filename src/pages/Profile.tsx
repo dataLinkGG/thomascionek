@@ -33,13 +33,15 @@ const ProfileSection: React.FC = () => {
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title">{NAME}</h1>
-          <p className="section__text__p2">{ROLE}</p>
+          <p className="section__text__p1">{ROLE}</p>
+          <br />
           <div className="btn-container">
             <Button
               type="default"
               shape="round"
               size={"large"}
               icon={<DownloadOutlined />}
+              className="AntButton2"
               onClick={() => {
                 window.open(cvThomasPath, "_blank");
               }}

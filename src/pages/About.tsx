@@ -26,7 +26,7 @@ const About: React.FC = () => {
                       functionalities and actively interacted with the database."
             >
               <div className="details-container">
-                <FontAwesomeIcon icon={faBriefcase} />
+                <FontAwesomeIcon className="icon" icon={faBriefcase} />
                 <h3>Experience</h3>
                 <br />
                 <p>
@@ -43,7 +43,7 @@ const About: React.FC = () => {
             >
               <div className="details-container">
                 <div>
-                  <FontAwesomeIcon icon={faGraduationCap} />
+                  <FontAwesomeIcon className="icon" icon={faGraduationCap} />
                   <h3>Education</h3>
                   <br />
                   <p>Análise e Desenvolvimento de Sistemas</p>
@@ -54,7 +54,7 @@ const About: React.FC = () => {
             <Tooltip>
               <div className="details-container">
                 <div>
-                  <FontAwesomeIcon icon={faBullseye} />
+                  <FontAwesomeIcon className="icon" icon={faBullseye} />
                   <h3>Goal</h3>
                   <br />
                   <p>

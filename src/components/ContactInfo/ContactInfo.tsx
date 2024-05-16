@@ -58,7 +58,13 @@ const ContactInfo: React.FC = () => {
   return (
     <Context.Provider value={contextValue}>
       {contextHolder}
-      <Button type="primary" shape="round" size={"large"} onClick={showDrawer}>
+      <Button
+        className="AntButton1"
+        type="primary"
+        shape="round"
+        size={"large"}
+        onClick={showDrawer}
+      >
         Contact info
       </Button>
       <Drawer
