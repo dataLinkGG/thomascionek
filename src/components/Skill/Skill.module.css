@@ -1,0 +1,39 @@
+article {
+  display: flex;
+  cursor: default;
+  width: 10rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+article .icon {
+  width: 35px;
+  height: 35px;
+}
+
+article:hover {
+  transition: transform 0.4s ease-in;
+  transform: scale(1.1);
+}
+
+.proficiency1 {
+  color: #7a4b1c;
+  font-weight: 200;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
+  font-size: xx-small;
+}
+
+.proficiency2 {
+  color: rgb(99, 99, 99);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
+  font-weight: 600;
+  font-size: xx-small;
+}
+
+.proficiency3 {
+  color: goldenrod;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
+  font-weight: 800;
+  font-size: xx-small;
+}
