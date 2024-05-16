@@ -177,7 +177,7 @@ section {
   filter: grayscale(0.7);
 }
 
-.section__pic-container {
+.picContainerr {
   display: flex;
   height: 400px;
   width: 400px;
