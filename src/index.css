@@ -8,7 +8,7 @@
   --accent-color: #c9a081;
   --background-color: #272138;
   --trasnparent-background-color: #453c64;
-  --text-color: #ccc;
+  --text-color: #8d8d8d;
 }
 
 * {
@@ -185,7 +185,7 @@ section {
 
 .pic {
   border-radius: 50%;
-  filter: grayscale(0.7);
+  filter: grayscale(1);
 }
 
 .section__pic-container {
