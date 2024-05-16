@@ -57,10 +57,7 @@ const About: React.FC = () => {
                   <FontAwesomeIcon className="icon" icon={faBullseye} />
                   <h3>Goal</h3>
                   <br />
-                  <p>
-                    Open for Freelancing projects and seeking new junior-level
-                    opportunities as a Full Stack developer.
-                  </p>
+                  <div>Full Stack Development</div>
                   <br />
                 </div>
               </div>
