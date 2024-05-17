@@ -1,9 +1,13 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Modal } from "antd";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
-const AntModal = () => {
+type AntModalProps = {
+  children: ReactNode;
+};
+
+const AntModal: React.FC<AntModalProps> = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -30,14 +34,9 @@ const AntModal = () => {
         onCancel={handleCancel}
         okText="Ok"
         cancelText="Close"
+        footer
       >
-        <div>
-          Solid foundation in Linux, having used various distributions for
-          nearly 10 years, with a keen interest in experimenting with commands,
-          customization, and troubleshooting. Gained international exposure
-          during a 4-year stint in Poland, where he studied Computer Science and
-          interacted with exchange students from around the world.
-        </div>
+        <div>{children}</div>
       </Modal>
     </>
   );
