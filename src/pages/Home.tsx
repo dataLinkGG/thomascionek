@@ -16,7 +16,6 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Navbar />
       <Profile isMobile={isMobile} />
       <About />
       <Experience />
