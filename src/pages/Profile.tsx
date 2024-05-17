@@ -1,10 +1,11 @@
 import React from "react";
-import { DownloadOutlined } from "@ant-design/icons";
+import { DownOutlined, DownloadOutlined } from "@ant-design/icons";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN, NAME, ROLE, WHATSAPP } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
 import AntButton from "../components/AntButton/AntButton";
+import { Tooltip } from "antd";
 
 type ProfileProps = {
   isMobile: boolean;
@@ -14,7 +15,7 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
   const cvThomasPath = "./CV_Thomas_Cionek_EN.pdf";
 
   return (
-    <section>
+    <section style={{ flexDirection: "column" }}>
       <div id="profile">
         {isMobile ? undefined : (
           <div className="section__pic-container">
@@ -58,6 +59,11 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
           </div>
         </div>
       </div>
+      <Tooltip title="Scroll down">
+        <div className="animated-icon">
+          <DownOutlined />
+        </div>
+      </Tooltip>
     </section>
   );
 };

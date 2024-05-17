@@ -548,3 +548,16 @@ footer p {
 .sign {
   height: 50px;
 }
+
+.animated-icon {
+  animation: bobbing 1s ease-in-out infinite alternate;
+}
+
+@keyframes bobbing {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}
