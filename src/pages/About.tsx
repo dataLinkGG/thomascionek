@@ -38,16 +38,16 @@ const About: React.FC = () => {
                 </p>
               </div>
             </Tooltip>
-              <div className="details-container">
-                <div>
-                  <FontAwesomeIcon className="icon" icon={faGraduationCap} />
-                  <h3>Education</h3>
-                  <br />
-                  <p>Strategic Planning and Analysis Systems Development</p>
-                  <br />
-                </div>
-                <AntModal />
+            <div className="details-container">
+              <div>
+                <FontAwesomeIcon className="icon" icon={faGraduationCap} />
+                <h3>Education</h3>
+                <br />
+                <p>Strategic Planning and Analysis Systems Development</p>
+                <br />
               </div>
+              <AntModal />
+            </div>
             <Tooltip>
               <div className="details-container">
                 <div>
