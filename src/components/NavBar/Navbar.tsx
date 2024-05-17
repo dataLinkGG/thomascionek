@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
+import myLogo from "../../assets/sign.svg";
 
 const Nav = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Nav = (): JSX.Element => {
   return (
     <div className={styles.navigation}>
       {isMobile ? (
-        <nav id="hamburgerNav">
+        <div id="hamburgerNav">
           <div className={styles.hamburgerMenu}>
             <div className={styles.hamburgerIcon} onClick={toggleMenu}>
               <span />
@@ -49,10 +50,12 @@ const Nav = (): JSX.Element => {
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       ) : (
-        <nav>
-          <div className={styles.logo}>Thomas</div>
+        <nav className="desktopNav" id="desktopNav">
+          <div className={styles.logo}>
+            <img className="sign" src={myLogo} alt="" />
+          </div>
           <div>
             <ul className={styles.navLinks}>
               <li>

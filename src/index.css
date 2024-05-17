@@ -162,9 +162,8 @@ section {
 
 #profile {
   display: flex;
-  justify-content: space-between;
-  width: 960px;
-  gap: 5rem;
+  width: 100%;
+  justify-content: space-around;
   height: 80vh; /*i want header to 20vh*/
 }
 
@@ -544,4 +543,8 @@ footer p {
 
 .modalButton {
   color: #c9a081;
+}
+
+.sign {
+  height: 50px;
 }
