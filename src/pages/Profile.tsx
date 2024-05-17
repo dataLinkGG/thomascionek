@@ -63,7 +63,7 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
           </div>
         </div>
       </div>
-      <Tooltip title="Scroll down">
+      <Tooltip title="🖱️️ Scroll down">
         <div className="animated-icon">
           <DownOutlined />
         </div>
