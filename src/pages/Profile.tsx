@@ -1,11 +1,11 @@
 import React from "react";
-import { DownloadOutlined, WhatsAppOutlined } from "@ant-design/icons";
+import { DownloadOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
-import ContactInfo from "../components/ContactInfo/ContactInfo";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN, NAME, ROLE, WHATSAPP } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
+import AntButton from "../components/AntButton/AntButton";
 
 type ProfileProps = {
   isMobile: boolean;
@@ -44,17 +44,7 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
             >
               Download CV
             </Button>
-            <Button
-              type="primary"
-              shape="round"
-              size={"large"}
-              className="AntButton1"
-              onClick={() => {
-                window.open(WHATSAPP, "_blank");
-              }}
-            >
-              Let's Talk
-            </Button>
+            <AntButton>Let's Talk</AntButton>
           </div>
           <div id="socials-container">
             <IconLink url={LINKEDIN} altText="My LinkedIn profile">
