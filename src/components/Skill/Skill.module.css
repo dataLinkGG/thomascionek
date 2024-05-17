@@ -19,7 +19,7 @@ article:hover {
 
 .proficiency1 {
   color: #7a4b1c;
-  font-weight: 200;
+  font-weight: 800;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
   font-size: xx-small;
 }
@@ -27,7 +27,7 @@ article:hover {
 .proficiency2 {
   color: rgb(99, 99, 99);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
-  font-weight: 600;
+  font-weight: 800;
   font-size: xx-small;
 }
 
