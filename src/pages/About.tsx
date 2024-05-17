@@ -52,7 +52,7 @@ const About: React.FC = () => {
               <div className="details-container">
                 <div>
                   <FontAwesomeIcon className="icon" icon={faBullseye} />
-                  <h3>Goal</h3>
+                  <h3>Goals</h3>
                   <br />
                   <div>Full Stack Development</div>
                   <br />
