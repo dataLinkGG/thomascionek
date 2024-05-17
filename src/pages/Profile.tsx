@@ -1,9 +1,8 @@
 import React from "react";
 import { DownloadOutlined } from "@ant-design/icons";
-import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import IconLink from "../components/IconLink/IconLink";
-import { GITHUB, LINKEDIN, NAME, ROLE } from "../constants";
+import { GITHUB, LINKEDIN, NAME, ROLE, WHATSAPP } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
 import AntButton from "../components/AntButton/AntButton";
 
@@ -32,19 +31,22 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
           <p className="section__text__p1">{ROLE}</p>
           <br />
           <div className="btn-container">
-            <Button
-              type="default"
-              shape="round"
-              size={"large"}
-              icon={<DownloadOutlined />}
-              className="AntButton2"
+            <AntButton
+              type="text"
               onClick={() => {
                 window.open(cvThomasPath, "_blank");
               }}
             >
+              <DownloadOutlined />
               Download CV
-            </Button>
-            <AntButton>Let's Talk</AntButton>
+            </AntButton>
+            <AntButton
+              onClick={() => {
+                window.open(WHATSAPP, "_blank");
+              }}
+            >
+              Let's Talk
+            </AntButton>
           </div>
           <div id="socials-container">
             <IconLink url={LINKEDIN} altText="My LinkedIn profile">

@@ -1,13 +1,26 @@
 import { Button, ConfigProvider } from "antd";
 import React from "react";
-import { WHATSAPP } from "../../constants";
 
 type AntButtonProps = {
   children: React.ReactNode;
-  color?: string;
+  onClick?: VoidFunction;
+  type?: "primary" | "text"; // Add type prop to specify button type
 };
 
-const AntButton: React.FC<AntButtonProps> = ({ children, color = "black" }) => {
+const AntButton: React.FC<AntButtonProps> = ({
+  children,
+  type = "primary",
+  onClick,
+}) => {
+  const style =
+    type === "text"
+      ? {
+          background: "transparent",
+          color: "var(--text-color)",
+          border: "var(--text-color) 1px solid",
+        }
+      : undefined;
+
   return (
     <ConfigProvider
       theme={{
@@ -22,13 +35,11 @@ const AntButton: React.FC<AntButtonProps> = ({ children, color = "black" }) => {
       }}
     >
       <Button
-        type="primary"
+        type={type}
         size="large"
         shape="round"
-        style={{ color }}
-        onClick={() => {
-          window.open(WHATSAPP, "_blank");
-        }}
+        style={style}
+        onClick={onClick}
       >
         {children}
       </Button>
