@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import myLogo from "../../assets/sign.svg";
+import HamburgerNav from "./HamburgerNav";
 
 const Nav = (): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
 
   useEffect(() => {
@@ -20,37 +15,7 @@ const Nav = (): JSX.Element => {
   return (
     <div className={styles.navigation}>
       {isMobile ? (
-        <div id="hamburgerNav">
-          <div className={styles.hamburgerMenu}>
-            <div className={styles.hamburgerIcon} onClick={toggleMenu}>
-              <span />
-              <span />
-              <span />
-            </div>
-            <ul className={`${styles.menuLinks} ${isOpen ? styles.open : ""}`}>
-              <li>
-                <a href="#profile" onClick={toggleMenu}>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#about" onClick={toggleMenu}>
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#experience" onClick={toggleMenu}>
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a href="#contact" onClick={toggleMenu}>
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <HamburgerNav />
       ) : (
         <nav className="desktopNav" id="desktopNav">
           <div className={styles.logo}>
