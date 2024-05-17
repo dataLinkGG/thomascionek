@@ -5,6 +5,7 @@ import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN, NAME, ROLE, WHATSAPP } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
 import AntButton from "../components/AntButton/AntButton";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Tooltip } from "antd";
 
 type ProfileProps = {
@@ -19,11 +20,14 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
       <div id="profile">
         {isMobile ? undefined : (
           <div className="section__pic-container">
-            <img
+            <LazyLoadImage
               src={profilePic}
               alt={`${NAME} profile picture`}
               className="pic"
+              width={450}
+              effect="blur"
             />
+            <img />
           </div>
         )}
         <div className="section__text">
