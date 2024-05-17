@@ -294,7 +294,7 @@ section {
 }
 
 .experience-sub-title {
-  color: var(--secondary-color);
+  color: var(--text-color);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;

@@ -20,7 +20,7 @@ const Home: React.FC = () => {
       <Profile isMobile={isMobile} />
       <About />
       <Experience />
-      <Contact isMobile={isMobile} />
+      {isMobile ? undefined : <Contact />}
     </>
   );
 };

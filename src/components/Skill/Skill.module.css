@@ -18,14 +18,14 @@ article:hover {
 }
 
 .proficiency1 {
-  color: #7a4b1c;
+  color: #9e6123;
   font-weight: 800;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
   font-size: xx-small;
 }
 
 .proficiency2 {
-  color: rgb(99, 99, 99);
+  color: rgb(202, 202, 202);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
   font-weight: 800;
   font-size: xx-small;
