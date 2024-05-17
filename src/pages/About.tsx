@@ -47,7 +47,7 @@ const About: React.FC = () => {
                   <FontAwesomeIcon className="icon" icon={faGraduationCap} />
                   <h3>Education</h3>
                   <br />
-                  <p>Análise e Desenvolvimento de Sistemas</p>
+                  <p>Strategic Planning and Analysis Systems Development</p>
                   <br />
                 </div>
                 <AntModal />
