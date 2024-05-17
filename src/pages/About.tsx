@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { Tooltip } from "antd";
+import AntModal from "../components/AntModal/AntModal";
 
 const About: React.FC = () => {
   const jobTitle = "Full Stack Development";
@@ -39,7 +40,7 @@ const About: React.FC = () => {
             </Tooltip>
             <Tooltip
               placement="bottom"
-              title={`Solid foundation in Linux, having used various distributions for nearly 10 years, with a keen interest in experimenting with commands, customization, and troubleshooting. Gained international exposure during a 4-year stint in Poland, where he studied Computer Science and interacted with exchange students from around the world.`}
+              title={``}
             >
               <div className="details-container">
                 <div>
@@ -49,6 +50,7 @@ const About: React.FC = () => {
                   <p>Análise e Desenvolvimento de Sistemas</p>
                   <br />
                 </div>
+                <AntModal />
               </div>
             </Tooltip>
             <Tooltip>

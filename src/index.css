@@ -541,3 +541,7 @@ footer p {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+.modalButton {
+  color: #c9a081;
+}
