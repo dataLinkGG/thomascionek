@@ -482,6 +482,7 @@ footer p {
     color: var(--secondary-color);
   }
   .title {
+    white-space: nowrap;
     font-size: 2rem;
   }
   .text-container {
