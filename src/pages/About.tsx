@@ -50,6 +50,7 @@ const About: React.FC = () => {
                 <br />
                 <p>Strategic Planning and Analysis Systems Development</p>
                 <br />
+                <br />
               </div>
               <AntModal>
                 Solid foundation in Linux, having used various distributions for
@@ -76,6 +77,7 @@ const About: React.FC = () => {
                       <SendOutlined />
                       &nbsp;Full Stack Development
                     </div>
+                    <br />
                     <div
                       style={{
                         display: "flex",
