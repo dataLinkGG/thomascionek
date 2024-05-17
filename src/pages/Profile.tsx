@@ -6,7 +6,7 @@ import { GITHUB, LINKEDIN, NAME, ROLE, WHATSAPP } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
 import AntButton from "../components/AntButton/AntButton";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Tooltip } from "antd";
+import { Button, Tooltip } from "antd";
 
 type ProfileProps = {
   isMobile: boolean;
@@ -65,7 +65,9 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
       </div>
       <Tooltip title="🖱️️ Scroll down">
         <div className="animated-icon">
-          <DownOutlined />
+          <a href="#about" style={{ color: "#fff" }}>
+            <DownOutlined />
+          </a>
         </div>
       </Tooltip>
     </section>

@@ -552,7 +552,8 @@ footer p {
 }
 
 .animated-icon {
-  animation: bobbing 1s ease-in-out infinite alternate;
+  animation: bobbing 1.2s ease-in-out infinite alternate;
+  scroll-behavior: smooth;
 }
 
 @keyframes bobbing {
