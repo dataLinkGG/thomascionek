@@ -38,10 +38,6 @@ const About: React.FC = () => {
                 </p>
               </div>
             </Tooltip>
-            <Tooltip
-              placement="bottom"
-              title={``}
-            >
               <div className="details-container">
                 <div>
                   <FontAwesomeIcon className="icon" icon={faGraduationCap} />
@@ -52,7 +48,6 @@ const About: React.FC = () => {
                 </div>
                 <AntModal />
               </div>
-            </Tooltip>
             <Tooltip>
               <div className="details-container">
                 <div>
