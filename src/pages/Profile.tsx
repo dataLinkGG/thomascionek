@@ -44,13 +44,20 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
             >
               Download CV
             </Button>
-            <ContactInfo />
+            <Button
+              type="primary"
+              shape="round"
+              size={"large"}
+              className="AntButton1"
+              onClick={() => {
+                window.open(WHATSAPP, "_blank");
+              }}
+            >
+              Let's Talk
+            </Button>
           </div>
           <div id="socials-container">
-            <IconLink url={WHATSAPP} altText="My Github profile">
-              <WhatsAppOutlined className="largeIcon" />
-            </IconLink>
-            <IconLink url={LINKEDIN} altText="My Github profile">
+            <IconLink url={LINKEDIN} altText="My LinkedIn profile">
               <LinkedinOutlined className="largeIcon" />
             </IconLink>
             <IconLink url={GITHUB} altText="My Github profile">

@@ -528,6 +528,7 @@ footer p {
 }
 
 .AntButton1 {
+  color: black;
   background-color: var(--accent-color);
 }
 

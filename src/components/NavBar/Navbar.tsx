@@ -20,7 +20,6 @@ const Nav = (): JSX.Element => {
     <div className={styles.navigation}>
       {isMobile ? (
         <nav id="hamburgerNav">
-          <div className={styles.logo}>Thomas</div>
           <div className={styles.hamburgerMenu}>
             <div className={styles.hamburgerIcon} onClick={toggleMenu}>
               <span />
@@ -53,7 +52,7 @@ const Nav = (): JSX.Element => {
         </nav>
       ) : (
         <nav>
-          <div className={styles.logo}>Thomas Cionek</div>
+          <div className={styles.logo}>Thomas</div>
           <div>
             <ul className={styles.navLinks}>
               <li>

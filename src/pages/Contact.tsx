@@ -12,31 +12,25 @@ const Contact: React.FC<ProfileProps> = ({ isMobile }) => {
       <p className="section__text__p1">Get in Touch</p>
       <h1 className="title">Contact Me</h1>
       {isMobile ? (
-        <Button
-          type="primary"
-          target="_blank"
-          onClick={() => {
-            window.open(WHATSAPP, "_blank");
-          }}
-        >
-          Chat
-        </Button>
+        <></>
       ) : (
-        <Tooltip placement="right" title={"Click or scan to chat with me!"}>
-          <Button
-            type="text"
-            target="_blank"
-            onClick={() => {
-              window.open(WHATSAPP, "_blank");
-            }}
-          >
-            <div>
-              <img className="qr-code" src={qr_code} alt="" />
-            </div>
-          </Button>
-          <br />{" "}
-          {/* just put some element so the tooltip apears in the middle */}
-        </Tooltip>
+        <>
+          <Tooltip placement="right" title={"Click or scan to chat with me!"}>
+            <Button
+              type="text"
+              target="_blank"
+              onClick={() => {
+                window.open(WHATSAPP, "_blank");
+              }}
+            >
+              <div>
+                <img className="qr-code" src={qr_code} alt="" />
+              </div>
+            </Button>
+            <br />{" "}
+            {/* just put some element so the tooltip apears in the middle */}
+          </Tooltip>
+        </>
       )}
     </section>
   );
