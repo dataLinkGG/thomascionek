@@ -1,7 +1,8 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Modal } from "antd";
+import { Modal } from "antd";
 import { ReactNode, useState } from "react";
+import AntButton from "../AntButton/AntButton";
 
 type AntModalProps = {
   children: ReactNode;
@@ -24,9 +25,9 @@ const AntModal: React.FC<AntModalProps> = ({ children }) => {
 
   return (
     <>
-      <Button className="modalButton" type="text" onClick={showModal}>
+      <AntButton onClick={showModal}>
         <FontAwesomeIcon icon={faSearch} />
-      </Button>
+      </AntButton>
       <Modal
         title="Eduction"
         open={isModalOpen}
