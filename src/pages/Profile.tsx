@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  DownloadOutlined,
-  WhatsAppOutlined,
-} from "@ant-design/icons";
+import { DownloadOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import ContactInfo from "../components/ContactInfo/ContactInfo";

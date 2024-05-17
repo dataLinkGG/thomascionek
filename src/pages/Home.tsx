@@ -3,6 +3,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Experience from "./Experience";
 import Profile from "./Profile";
+import Navbar from "../components/NavBar/Navbar";
+import { Outlet } from "react-router-dom";
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
@@ -15,6 +17,8 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Navbar />
+      <Outlet />
       <Profile isMobile={isMobile} />
       <About />
       <Experience />

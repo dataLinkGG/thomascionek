@@ -20,7 +20,7 @@ const Nav = (): JSX.Element => {
     <div className={styles.navigation}>
       {isMobile ? (
         <nav id="hamburgerNav">
-          <div className={styles.logo}>Thomas Cionek</div>
+          <div className={styles.logo}>Thomas</div>
           <div className={styles.hamburgerMenu}>
             <div className={styles.hamburgerIcon} onClick={toggleMenu}>
               <span />
@@ -29,22 +29,22 @@ const Nav = (): JSX.Element => {
             </div>
             <ul className={`${styles.menuLinks} ${isOpen ? styles.open : ""}`}>
               <li>
-                <a href="/" onClick={toggleMenu}>
+                <a href="#profile" onClick={toggleMenu}>
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about" onClick={toggleMenu}>
+                <a href="#about" onClick={toggleMenu}>
                   About
                 </a>
               </li>
               <li>
-                <a href="/experience" onClick={toggleMenu}>
+                <a href="#experience" onClick={toggleMenu}>
                   Experience
                 </a>
               </li>
               <li>
-                <a href="/contact" onClick={toggleMenu}>
+                <a href="#contact" onClick={toggleMenu}>
                   Contact
                 </a>
               </li>
@@ -57,16 +57,16 @@ const Nav = (): JSX.Element => {
           <div>
             <ul className={styles.navLinks}>
               <li>
-                <a href="/">Home</a>
+                <a href="#profile">Home</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="/experience">Experience</a>
+                <a href="#experience">Experience</a>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>

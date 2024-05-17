@@ -31,22 +31,6 @@ a,
 
 /* DESKTOP NAV */
 
-nav,
-.nav-links {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  justify-content: space-around;
-  z-index: 1;
-}
-
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
-
 h3 {
   color: var(--secondary-color);
 }
