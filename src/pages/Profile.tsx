@@ -1,10 +1,13 @@
 import React from "react";
-import { DownloadOutlined } from "@ant-design/icons";
+import {
+  DownloadOutlined,
+  WhatsAppOutlined,
+} from "@ant-design/icons";
 import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import ContactInfo from "../components/ContactInfo/ContactInfo";
 import IconLink from "../components/IconLink/IconLink";
-import { GITHUB, LINKEDIN, NAME, ROLE } from "../constants";
+import { GITHUB, LINKEDIN, NAME, ROLE, WHATSAPP } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
 
 type ProfileProps = {
@@ -47,6 +50,9 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
             <ContactInfo />
           </div>
           <div id="socials-container">
+            <IconLink url={WHATSAPP} altText="My Github profile">
+              <WhatsAppOutlined className="largeIcon" />
+            </IconLink>
             <IconLink url={LINKEDIN} altText="My Github profile">
               <LinkedinOutlined className="largeIcon" />
             </IconLink>
