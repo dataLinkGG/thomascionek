@@ -510,25 +510,6 @@ footer p {
   width: 100%;
 }
 
-.glass {
-  width: 250px;
-  height: 250px;
-  margin: 15px;
-  backdrop-filter: blur(5px);
-  border-radius: 30px;
-  background: linear-gradient(
-    50deg,
-    rgba(0, 227, 212, 0.2),
-    rgba(166, 0, 255, 0.2)
-  );
-  box-shadow: 0 26px 2pc, rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  text-align: left;
-  color: aliceblue;
-
-  transition: transform 0.4s ease-in;
-}
-
 .largeIcon {
   font-size: 2rem;
 }
@@ -538,8 +519,7 @@ footer p {
   height: 300px;
 }
 
-.qr-code:hover,
-.glass:hover {
+.qr-code:hover {
   transform: scale(1.1);
   transition: transform 0.4s ease-in;
 }
