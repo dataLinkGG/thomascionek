@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import styles from "./Skill.module.css";
 
 type proficiencyLevel = 1 | 2 | 3;
@@ -30,7 +31,7 @@ const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
       />
       <div>
         <h1>{name}</h1>
-        <p className={styles[`proficiency${expertise}`]}>{expertiseText}</p>
+        <div className={styles[`proficiency${expertise}`]}>{expertiseText}</div>
       </div>
     </article>
   );

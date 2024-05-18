@@ -1,15 +1,15 @@
 article {
   display: flex;
   cursor: default;
-  width: 10rem;
+  width: 15rem;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
 }
 
 article .icon {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
 }
 
 article:hover {
@@ -17,23 +17,37 @@ article:hover {
   transform: scale(1.1);
 }
 
-.proficiency1 {
-  color: #9e6123;
+.proficiency1,
+.proficiency2,
+.proficiency3 {
   font-weight: 800;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
   font-size: xx-small;
+  padding: 2px;
+  border-radius: 1px;
+  margin: 2px;
+  width: fit-content;
+}
+
+.proficiency1 {
+  --pro-color: rgba(158, 97, 35, 1);
+  --pro-color-transludid: rgba(158, 97, 35, 0.3);
+  color: var(--pro-color);
+  background-color: var(--pro-color-transludid);
+  border: var(--pro-color) 1px solid;
 }
 
 .proficiency2 {
-  color: rgb(202, 202, 202);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
-  font-weight: 800;
-  font-size: xx-small;
+  --pro-color: rgba(146, 146, 146, 1);
+  --pro-color-transludid: rgba(146, 146, 146, 0.3);
+  color: var(--pro-color);
+  background-color: var(--pro-color-transludid);
+  border: var(--pro-color) 1px solid;
 }
 
 .proficiency3 {
-  color: goldenrod;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* OffsetX, OffsetY, BlurRadius, Color(rgba for transparency) */
-  font-weight: 800;
-  font-size: xx-small;
+  --pro-color: rgba(218, 165, 32, 1);
+  --pro-color-translucid: rgba(218, 165, 32, 0.3);
+  color: var(--pro-color);
+  background-color: var(--pro-color-translucid);
+  border: var(--pro-color) 1px solid;
 }
