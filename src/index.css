@@ -37,6 +37,10 @@ h3 {
   color: var(--secondary-color);
 }
 
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -254,7 +258,7 @@ section {
 }
 
 .about-details-container {
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -275,6 +279,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
+  position: relative;
   flex: 1;
   background-color: var(--trasnparent-background-color);
   border-radius: 2rem;
@@ -602,4 +607,11 @@ footer p {
   50% {
     border-color: var(--primary-color);
   }
+}
+
+.centeredButton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
 }
