@@ -120,7 +120,7 @@ const About: React.FC = () => {
                     }}
                   >
                     <SendOutlined />
-                    &nbsp;Full Stack Development
+                    <p>&nbsp;Full Stack Development</p>
                   </div>
                   <div
                     style={{
@@ -129,7 +129,7 @@ const About: React.FC = () => {
                     }}
                   >
                     <SendOutlined />
-                    &nbsp;Freelancing Projects
+                    <p>&nbsp;Freelancing Projects</p>
                   </div>
                 </div>
               </div>
