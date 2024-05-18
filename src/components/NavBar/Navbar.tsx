@@ -30,7 +30,7 @@ const Nav = (): JSX.Element => {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience">Skill Set</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
