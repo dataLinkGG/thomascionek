@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             <img className="qr-code" src={qr_code} alt="" />
           </div>
         </Button>
-        <br /> {/* just put some element so the tooltip apears in the middle */}
+        <br />
       </Tooltip>
     </section>
   );
