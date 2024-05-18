@@ -30,7 +30,6 @@ const Experience: React.FC = () => {
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
       <h1 className="title">Skills</h1>
-
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
