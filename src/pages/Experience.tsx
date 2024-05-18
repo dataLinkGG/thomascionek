@@ -36,9 +36,9 @@ const Experience: React.FC = () => {
             <h3 className="experience-sub-title">Programming Languages</h3>
             <div className="article-container">
               <div className="article-container">
-                {languages.map((language) => (
-                  <Skill key={language.name} {...language} />
-                ))}
+              {languages.map((language) => (
+                <Skill key={language.name} {...language} />
+              ))}
               </div>
             </div>
           </div>
