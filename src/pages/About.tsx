@@ -12,19 +12,8 @@ import { Button, Modal } from "antd";
 const About: React.FC = () => {
   const jobTitle = "Full Stack Development";
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
+  const [experienceModalOpen, setExperienceModalOpen] = useState(false);
+  const [educationModalOpen, setEducationModalOpen] = useState(false);
 
   return (
     <section id="about">
@@ -49,7 +38,7 @@ const About: React.FC = () => {
                     color: "black",
                     border: "none",
                   }}
-                  onClick={showModal}
+                  onClick={() => setExperienceModalOpen(true)}
                 >
                   <div>
                     <FontAwesomeIcon icon={faSearch} /> See More
@@ -58,22 +47,21 @@ const About: React.FC = () => {
               </div>
               <div className="AntModal">
                 <Modal
-                  title="Eduction"
-                  open={isModalOpen}
-                  onOk={handleOk}
-                  onCancel={handleCancel}
+                  title="Experience"
+                  open={experienceModalOpen}
+                  onOk={() => setExperienceModalOpen(false)}
+                  onCancel={() => setExperienceModalOpen(false)}
                   okText="Ok"
                   cancelText="Close"
                   footer
                 >
-                  <div>
-                    Solid foundation in Linux, having used various distributions
-                    for nearly 10 years, with a keen interest in experimenting
-                    with commands, customization, and troubleshooting. Gained
-                    international exposure during a 4-year stint in Poland,
-                    where he studied Computer Science and interacted with
-                    exchange students from around the world.
-                  </div>
+                  Worked with Python, JavaScript, TypeScript, and PostgreSQL.
+                  Interactively customized React components from Ant Design
+                  based on the product models of Figma, working in Scrum
+                  methodology, with Code Reviews, product and team
+                  retrospectives meetings. Engagingly implemented back-end
+                  library functionalities and actively interacted with the
+                  database.
                 </Modal>
               </div>
             </div>
@@ -90,7 +78,7 @@ const About: React.FC = () => {
                       color: "black",
                       border: "none",
                     }}
-                    onClick={showModal}
+                    onClick={() => setEducationModalOpen(true)}
                   >
                     <div>
                       <FontAwesomeIcon icon={faSearch} /> See More
@@ -98,13 +86,21 @@ const About: React.FC = () => {
                   </Button>
                 </div>
               </div>
-              <Modal>
-                Worked with Python, JavaScript, TypeScript, and PostgreSQL.
-                Interactively customized React components from Ant Design based
-                on the product models of Figma, working in Scrum methodology,
-                with Code Reviews, product and team retrospectives meetings.
-                Engagingly implemented back-end library functionalities and
-                actively interacted with the database.
+              <Modal
+                title="Education"
+                open={educationModalOpen}
+                onOk={() => setEducationModalOpen(false)}
+                onCancel={() => setEducationModalOpen(false)}
+                okText="Ok"
+                cancelText="Close"
+                footer
+              >
+                Solid foundation in Linux, having used various distributions for
+                nearly 10 years, with a keen interest in experimenting with
+                commands, customization, and troubleshooting. Gained
+                international exposure during a 4-year stint in Poland, where he
+                studied Computer Science and interacted with exchange students
+                from around the world.
               </Modal>
             </div>
             <div className="details-container">
