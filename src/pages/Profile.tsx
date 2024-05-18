@@ -32,7 +32,9 @@ const Profile: React.FC<ProfileProps> = ({ isMobile }) => {
         )}
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
-          <h1 className="title">{NAME}</h1>
+          <div className="typewriter">
+            <h1 className="title">{NAME}</h1>
+          </div>
           <p className="section__text__p1">{ROLE}</p>
           <br />
           <div className="btn-container">
