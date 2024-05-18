@@ -4,6 +4,9 @@ This project is meant not only to display my personal information for recruiters
 
 Overall, I have been trying my best to balance good coding practices and also build something on my own.
 
+🚀 Live Preview:
+https://datalinkgg.github.io/thomascionek/
+
 Here is what I have used in this project:
 
 - React as the Frontend
