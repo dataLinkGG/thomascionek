@@ -29,7 +29,7 @@ const Experience: React.FC = () => {
   return (
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
-      <h1 className="title">Skill Set</h1>
+      <h1 className="title">Skills</h1>
 
       <div className="experience-details-container">
         <div className="about-containers">

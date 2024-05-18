@@ -29,7 +29,7 @@ const HamburgerNav: React.FC = () => {
           </li>
           <li>
             <a href="#experience" onClick={toggleMenu}>
-              Experience
+              Skills
             </a>
           </li>
           <li>
