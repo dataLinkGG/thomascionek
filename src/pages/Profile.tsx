@@ -6,7 +6,7 @@ import { GITHUB, LINKEDIN, NAME, ROLE, WHATSAPP } from "../constants";
 import profilePic from "../assets/profile-pic.jpg";
 import AntButton from "../components/AntButton/AntButton";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Button, Tooltip } from "antd";
+import { Tooltip } from "antd";
 
 type ProfileProps = {
   isMobile: boolean;
