@@ -1,8 +1,4 @@
-/* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
-/* <link href="" rel="stylesheet">
-https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap */
 :root {
   --primary-color: #90ee90;
   --secondary-color: #2e8b57;
@@ -24,14 +20,9 @@ html {
   color: var(--text-color);
 }
 
-/* TRANSITION */
-
-a,
-.btn {
+a {
   transition: all 300ms ease;
 }
-
-/* DESKTOP NAV */
 
 h3 {
   color: var(--secondary-color);
@@ -64,41 +55,10 @@ a:active {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
-
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
 .hamburger-icon span {
   width: 100%;
   height: 2px;
   background-color: var(--primary-color);
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
 
@@ -114,10 +74,6 @@ a:active {
 
 .menu-links li {
   list-style: none;
-}
-
-.menu-links.open {
-  max-height: 300px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -169,8 +125,6 @@ section {
   }
 }
 
-/* PROFILE SECTION */
-
 #profile {
   display: flex;
   width: 100%;
@@ -206,12 +160,6 @@ section {
   font-family: "Courier New", Courier, monospace;
 }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
 .title {
   display: flex;
   font-size: 3rem;
@@ -227,23 +175,17 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
   color: #2e8b57;
 }
 
-/* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-
-/* ABOUT SECTION */
 
 #about {
   display: flex;
@@ -254,27 +196,11 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem; /*this is so the text isn't just bellow the container*/
+  margin-bottom: 2rem;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
+.about-containers {
   display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
 }
 
 .details-container {
@@ -300,13 +226,11 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
-
 #experience {
   display: flex;
   flex-direction: column;
   padding-inline: 25%;
-  position: relative; /* why relative? */
+  position: relative;
 }
 
 .experience-sub-title {
@@ -330,19 +254,6 @@ section {
   gap: 2.5rem;
   justify-content: space-around;
 }
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-/* CONTACT */
 
 #contact {
   display: flex;
@@ -372,21 +283,6 @@ section {
   font-size: larger;
 }
 
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
 footer p {
   text-align: center;
 }
@@ -407,12 +303,6 @@ footer p {
 }
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -421,9 +311,6 @@ footer p {
   .section-container {
     display: flex;
     justify-content: center;
-  }
-  .arrow {
-    display: none;
   }
   section,
   .section-container {
@@ -450,9 +337,6 @@ footer p {
     height: fit-content;
   }
   #contact,
-  footer {
-    height: 40vh;
-  }
   #profile {
     height: 75vh;
     margin-bottom: 0;
@@ -482,26 +366,14 @@ footer p {
   .logo {
     font-size: 1.5rem;
   }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
   .section__pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
-    color: var(--primary-color);
-  }
   .title {
     white-space: nowrap;
     font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
   }
 }
 
@@ -524,24 +396,6 @@ footer p {
   transition: transform 0.4s ease-in;
 }
 
-.AntButton1 {
-  color: black;
-  background-color: var(--primary-color);
-}
-
-.AntButton1:hover {
-  background-color: var(--primary-color);
-}
-
-.AntButton2 {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.modalButton {
-  color: #c9a081;
-}
-
 .sign {
   height: 50px;
 }
@@ -561,14 +415,13 @@ footer p {
 }
 
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid var(--primary-color); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden;
+  border-right: 0.15em solid var(--primary-color);
+  white-space: nowrap;
+  margin: 0 auto;
   animation: typing 1.5s steps(13, end), blink-caret 1s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0;
@@ -578,7 +431,6 @@ footer p {
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
   to {
