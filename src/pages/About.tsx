@@ -110,13 +110,14 @@ const About: React.FC = () => {
                 <br />
                 <div>
                   <div
+                    /* TODO: create a class */
                     style={{
                       display: "flex",
                       justifyContent: "flex-start",
                     }}
                   >
                     <SendOutlined />
-                    <p>&nbsp;Full Stack Development</p>
+                    <div>&nbsp;Full Stack Development</div>
                   </div>
                   <div
                     style={{
@@ -125,7 +126,7 @@ const About: React.FC = () => {
                     }}
                   >
                     <SendOutlined />
-                    <p>&nbsp;Freelancing Projects</p>
+                    <div>&nbsp;Freelancing Projects</div>
                   </div>
                 </div>
               </div>
