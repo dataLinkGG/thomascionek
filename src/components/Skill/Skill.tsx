@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import styles from "./Skill.module.css";
 
 type proficiencyLevel = 1 | 2 | 3;
