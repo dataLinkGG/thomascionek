@@ -194,9 +194,6 @@ section {
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
-}
-
-.about-containers {
   display: flex;
 }
 
