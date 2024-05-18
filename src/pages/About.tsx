@@ -14,24 +14,20 @@ const About: React.FC = () => {
 
   return (
     <section id="about">
+      <p className="section__text__p1">Get to know more</p>
+      <h1 className="title">About Me</h1>
       <div>
-        <p className="section__text__p1">Get To Know More</p>
-        <h1 className="title">About Me</h1>
         <div className="section-container">
           <div className="about-containers">
-            <Tooltip placement="bottom" title="">
-              <div className="details-container">
-                <FontAwesomeIcon className="icon" icon={faBriefcase} />
-                <h3>Experience</h3>
+            <div className="details-container">
+              <FontAwesomeIcon className="icon" icon={faBriefcase} />
+              <h3>Experience</h3>
+              <p>
+                {jobTitle}
                 <br />
-                <p>
-                  {jobTitle}
-                  <br />
-                  Alude YC W20
-                  <br />
-                </p>
-                <br />
-                <br />
+                Alude YC W20
+              </p>
+              <div>
                 <AntModal>
                   Worked with Python, JavaScript, TypeScript, and PostgreSQL.
                   Interactively customized React components from Ant Design
@@ -42,15 +38,12 @@ const About: React.FC = () => {
                   database.
                 </AntModal>
               </div>
-            </Tooltip>
+            </div>
             <div className="details-container">
               <div>
                 <FontAwesomeIcon className="icon" icon={faGraduationCap} />
                 <h3>Education</h3>
-                <br />
                 <p>Strategic Planning and Analysis Systems Development</p>
-                <br />
-                <br />
               </div>
               <AntModal>
                 Solid foundation in Linux, having used various distributions for
@@ -66,7 +59,6 @@ const About: React.FC = () => {
                 <div className="details-container-goals">
                   <FontAwesomeIcon className="icon" icon={faBullseye} />
                   <h3>Goals</h3>
-                  <br />
                   <div>
                     <div
                       style={{
@@ -77,7 +69,6 @@ const About: React.FC = () => {
                       <SendOutlined />
                       &nbsp;Full Stack Development
                     </div>
-                    <br />
                     <div
                       style={{
                         display: "flex",
@@ -88,18 +79,12 @@ const About: React.FC = () => {
                       &nbsp;Freelancing Projects
                     </div>
                   </div>
-                  <br />
                 </div>
-                <br />
-                <br />
-                <br />
-                <br />
               </div>
             </Tooltip>
           </div>
         </div>
       </div>
-      <br />
     </section>
   );
 };
