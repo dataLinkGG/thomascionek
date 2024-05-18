@@ -20,10 +20,6 @@ html {
   color: var(--text-color);
 }
 
-a {
-  transition: all 300ms ease;
-}
-
 h3 {
   color: var(--secondary-color);
 }
@@ -36,6 +32,7 @@ a {
   color: var(--text-color);
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
+  transition: all 300ms ease;
 }
 
 a:hover {
