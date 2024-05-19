@@ -15,13 +15,13 @@
 }
 
 ul {
-  list-style: none; /* Remove default bullet points */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  margin-bottom: 0.3rem; /* Add some margin between list items */
+  margin-bottom: 0.3rem;
 }
 
 html {
@@ -107,8 +107,6 @@ a:active {
   transform: none;
 }
 
-/* SECTIONS */
-
 section {
   display: flex;
   flex-direction: column;
@@ -144,7 +142,7 @@ section {
   width: 100%;
   justify-content: center;
   gap: 5rem;
-  height: 80vh; /*i want header to 20vh*/
+  height: 80vh;
 }
 
 .pic {
@@ -453,7 +451,6 @@ footer p {
   padding: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /* object-fit: contain; */
   border-radius: 15%;
 }
 .socials-card {
@@ -472,8 +469,6 @@ footer p {
 .about-card {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* I can't wrap or the contact will deform*/
   margin: 2rem;
   background-color: var(--trasnparent-background-color);
   border-radius: 1rem;
