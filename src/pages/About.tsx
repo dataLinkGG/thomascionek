@@ -21,7 +21,15 @@ const About: React.FC = () => {
       <h1 className="title">About Me</h1>
       <div>
         <div className="section-container">
-          <div className="about-containers">
+          <div
+            className="about-card"
+            style={{
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+              border: "transparent",
+              background: "transparent",
+            }}
+          >
             <div className="details-container">
               <FontAwesomeIcon className="icon" icon={faBriefcase} />
               <h3>Experience</h3>

@@ -10,17 +10,18 @@ interface Skill {
 const Experience: React.FC = () => {
   const languages: Skill[] = [
     {
-      name: "Python",
-      expertise: 3,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-    },
-    {
       name: "JavaScript",
       expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
     {
-      name: "PostegreSQL",
+      name: "Python",
+      expertise: 3,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    },
+    {
+      name: "Postegre",
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     },
     {
@@ -35,8 +36,16 @@ const Experience: React.FC = () => {
       name: "TypeScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     },
-  ];
 
+    {
+      name: "Figma",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+    },
+    {
+      name: "Vim",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg",
+    },
+  ];
   return (
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
@@ -44,7 +53,6 @@ const Experience: React.FC = () => {
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="card" style={{ flexWrap: "wrap" }}>
-            <div style={{ display: "flex", flexDirection: "column" }}></div>
             {languages.map((language) => (
               <Skill key={language.name} {...language} />
             ))}

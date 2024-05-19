@@ -14,6 +14,16 @@
   padding: 0;
 }
 
+ul {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin-bottom: 0.3rem; /* Add some margin between list items */
+}
+
 html {
   scroll-behavior: smooth;
   background-color: var(--background-color);
@@ -208,11 +218,11 @@ section {
   flex: 1;
   background-color: var(--trasnparent-background-color);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--text-color) 0.1rem dashed;
+
   text-align: center;
   min-height: 15rem;
-  width: 100%;
+  max-width: 15rem;
 }
 
 .section__pic-container {
@@ -386,11 +396,6 @@ footer p {
   font-size: 2rem;
 }
 
-.qr-code:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s ease-in;
-}
-
 .sign {
   height: 50px;
 }
@@ -443,29 +448,33 @@ footer p {
   bottom: 2rem;
 }
 .qr-code {
-  flex-basis: 30%;
-  width: 200px;
-  height: 200px;
-  padding: 2rem;
-  object-fit: contain;
+  width: 180px;
+  height: 180px;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* object-fit: contain; */
+  border-radius: 15%;
 }
-
 .socials-card {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  width: 70%;
+  flex-basis: 5%;
   height: 100%;
+  margin-left: 1rem;
   padding: 0;
 }
 
-.card {
+.card,
+.about-card {
   display: flex;
   justify-content: center;
   /* flex-wrap: wrap; */
   /* I can't wrap or the contact will deform*/
-  padding: 2rem;
+  margin: 2rem;
   background-color: var(--trasnparent-background-color);
   border-radius: 1rem;
   border: var(--text-color) 1px dashed;
@@ -473,11 +482,40 @@ footer p {
   width: 50vw;
 }
 
+.about-card {
+  flex-wrap: "wrap";
+  justify-content: "space-between";
+  border: "transparent";
+  background: "transparent";
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    justify-content: flex-start;
+    width: 70vw;
+  }
+  .about-card {
+    gap: 1rem;
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    justify-content: flex-start;
+    width: 70vw;
+  }
+  .about-card {
+    gap: 1rem;
+    width: 70vw;
+  }
+}
+
 .vertical-divider {
   display: flex;
-  height: 100%;
-  border-left: 1px solid #ccc;
-  margin: 0 1rem;
+  height: 90%;
+  border-left: 1px dashed #ccc;
+  margin: 1rem 1rem;
 }
 
 .icon-wrapper {

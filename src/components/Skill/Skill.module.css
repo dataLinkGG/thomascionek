@@ -1,7 +1,9 @@
 article {
   display: flex;
   cursor: default;
-  width: 15rem;
+  margin: 1rem;
+  width: 13rem;
+  height: 5rem;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
