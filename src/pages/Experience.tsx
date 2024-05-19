@@ -30,17 +30,14 @@ const Experience: React.FC = () => {
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
       <h1 className="title">Skills</h1>
+      <h3 className="experience-sub-title">Programming Languages</h3>
       <div className="experience-details-container">
         <div className="about-containers">
-          <div className="details-container">
-            <h3 className="experience-sub-title">Programming Languages</h3>
-            <div className="article-container">
-              <div className="article-container">
-              {languages.map((language) => (
-                <Skill key={language.name} {...language} />
-              ))}
-              </div>
-            </div>
+          <div className="card">
+            <div style={{ display: "flex", flexDirection: "column" }}></div>
+            {languages.map((language) => (
+              <Skill key={language.name} {...language} />
+            ))}
           </div>
         </div>
       </div>

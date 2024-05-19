@@ -462,6 +462,7 @@ footer p {
 
 .card {
   display: flex;
+  justify-content: space-between;
   padding: 2rem;
   background-color: var(--trasnparent-background-color);
   border-radius: 1rem;
@@ -486,6 +487,6 @@ footer p {
 }
 
 .icon-wrapper img {
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
