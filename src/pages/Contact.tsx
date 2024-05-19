@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
               <IconLink url={GITHUB} altText="My Github profile">
                 <GithubOutlined className="largeIcon" />
               </IconLink>
-              <a href="href=mailto:“thomascionek@gmail.com">
+              <a href="href=mailto:“thomascionek97@gmail.com">
                 <MailOutlined className="largeIcon" />
               </a>
               <IconLink url={WHATSAPP} altText="My Github profile">
