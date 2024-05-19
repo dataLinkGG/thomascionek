@@ -101,13 +101,20 @@ a:active {
 
 section {
   display: flex;
-  padding-inline: 25%;
+  flex-direction: column;
   height: 100vh;
   box-sizing: border-box;
   min-height: fit-content;
   align-items: center;
   justify-content: center;
   scroll-snap-align: center; /* SNAP functionality*/
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -186,7 +193,7 @@ section {
 
 #about {
   display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .about-containers {
@@ -208,11 +215,6 @@ section {
   width: 100%;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -220,6 +222,12 @@ section {
 }
 
 #experience {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#contact {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -378,11 +386,6 @@ footer p {
   font-size: 2rem;
 }
 
-.qr-code {
-  width: 100px;
-  height: 100px;
-}
-
 .qr-code:hover {
   transform: scale(1.1);
   transition: transform 0.4s ease-in;
@@ -439,9 +442,51 @@ footer p {
   transform: translateX(-50%);
   bottom: 2rem;
 }
+.qr-code {
+  flex-basis: 30%;
+  width: 200px;
+  height: 200px;
+  padding: 2rem;
+  object-fit: contain;
+}
 
-.divider {
-  border: none;
-  border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
-  width: 100%;
+.socials-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 70%;
+  height: 100%;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  padding: 2rem;
+  background-color: var(--trasnparent-background-color);
+  border-radius: 1rem;
+  border: var(--text-color) 1px solid;
+  min-height: 10rem; /* Adjust as needed */
+  min-width: 50vw;
+}
+
+.vertical-divider {
+  display: flex;
+  height: 100%;
+  border-left: 1px solid #ccc;
+  margin: 0 1rem;
+}
+
+.icon-wrapper {
+  /* New class for icons */
+  width: 120px; /* Adjust icon size */
+  height: 120px; /* Adjust icon size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrapper img {
+  width: 100%; /* Icons inherit size from wrapper */
+  height: 100%;
 }
