@@ -11,7 +11,10 @@ const HamburgerNav: React.FC = () => {
   return (
     <div id="hamburgerNav">
       <div className={styles.hamburgerMenu}>
-        <div className={styles.hamburgerIcon} onClick={toggleMenu}>
+        <div
+          className={`${styles.hamburgerIcon} ${isOpen ? styles.open : ""}`}
+          onClick={toggleMenu}
+        >
           <span />
           <span />
           <span />
