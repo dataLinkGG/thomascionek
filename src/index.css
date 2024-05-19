@@ -462,13 +462,15 @@ footer p {
 
 .card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* I can't wrap or the contact will deform*/
   padding: 2rem;
   background-color: var(--trasnparent-background-color);
   border-radius: 1rem;
-  border: var(--text-color) 1px solid;
+  border: var(--text-color) 1px dashed;
   min-height: 10rem;
-  min-width: 50vw;
+  width: 50vw;
 }
 
 .vertical-divider {
