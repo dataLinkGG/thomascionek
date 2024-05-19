@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
                   <li>Vite</li>
                   <li>Font Awesome</li>
                   <li>Devicon</li>
-                  <li>Ant Disign</li>
+                  <li>Ant Design</li>
                   <li>Git Hub Pages</li>
                 </ul>
               </div>
