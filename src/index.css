@@ -31,7 +31,7 @@ html {
 }
 
 h3 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 p {
@@ -190,7 +190,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
-  color: #2e8b57;
+  color: var(--primary-color);
 }
 
 .btn-container {
