@@ -15,13 +15,11 @@ const AntButton: React.FC<AntButtonProps> = ({
   const style =
     type === "text"
       ? {
-          background: "transparent",
-          color: "var(--text-color)",
           border: "var(--text-color) 1px solid",
         }
       : undefined;
 
-  return (
+  return type !== "text" ? (
     <ConfigProvider
       theme={{
         components: {
@@ -39,6 +37,28 @@ const AntButton: React.FC<AntButtonProps> = ({
         size="large"
         shape="round"
         style={style}
+        onClick={onClick}
+      >
+        {children}
+      </Button>
+    </ConfigProvider>
+  ) : (
+    <ConfigProvider
+      theme={{
+        components: {
+          Button: {
+            colorPrimary: `transparent`,
+            colorPrimaryHover: `black`,
+            lineWidth: 0,
+          },
+        },
+      }}
+    >
+      <Button
+        type="primary"
+        size="large"
+        shape="round"
+        style={{ color}}
         onClick={onClick}
       >
         {children}
