@@ -12,12 +12,9 @@ const AntButton: React.FC<AntButtonProps> = ({
   type = "primary",
   onClick,
 }) => {
-  const style =
-    type === "text"
-      ? {
-          border: "var(--text-color) 1px solid",
-        }
-      : undefined;
+  const style = {
+    border: "var(--text-color) 1px solid",
+  };
 
   return type !== "text" ? (
     <ConfigProvider
@@ -36,7 +33,7 @@ const AntButton: React.FC<AntButtonProps> = ({
         type={type}
         size="large"
         shape="round"
-        style={style}
+        style={{ border: "none" }}
         onClick={onClick}
       >
         {children}
@@ -48,17 +45,17 @@ const AntButton: React.FC<AntButtonProps> = ({
         components: {
           Button: {
             colorPrimary: `transparent`,
-            colorPrimaryHover: `black`,
+            colorPrimaryHover: `var(--secondary-color)`,
             lineWidth: 0,
           },
         },
       }}
     >
       <Button
+        style={style}
         type="primary"
         size="large"
         shape="round"
-        style={{ color}}
         onClick={onClick}
       >
         {children}
