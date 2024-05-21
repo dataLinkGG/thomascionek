@@ -7,7 +7,7 @@ import {
 import qr_code from "../assets/qr_black_white_rounded.png";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN, WHATSAPP } from "../constants";
-import { Space, Tooltip } from "antd";
+import { Tooltip } from "antd";
 import React from "react";
 import Information from "../components/Information/Information";
 
