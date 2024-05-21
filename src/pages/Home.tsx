@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       <Profile isMobile={isMobile} />
       <About />
       <Experience />
-      {isMobile ? undefined : <Contact />}
+      <Contact isMobile={isMobile} />
     </>
   );
 };
