@@ -52,7 +52,7 @@ const About: React.FC = () => {
                   </div>
                 </Button>
               </div>
-              <div className="AntModal">
+              <div>
                 <Modal
                   title="Experience"
                   open={experienceModalOpen}
