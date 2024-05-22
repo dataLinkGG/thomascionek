@@ -117,14 +117,12 @@ const About: React.FC = () => {
                 <br />
                 <div>
                   <div
-                    /* TODO: create a class */
                     style={{
                       display: "flex",
                       justifyContent: "flex-start",
                     }}
                   >
                     <ul>
-                      {/* <SendOutlined style={{ height: "1px" }} /> */}
                       <p>-&nbsp;Full Stack Development</p>
                     </ul>
                   </div>
@@ -134,7 +132,6 @@ const About: React.FC = () => {
                       justifyContent: "flex-start",
                     }}
                   >
-                    {/* <SendOutlined /> */}
                     <p>-&nbsp;Freelancing Projects</p>
                   </div>
                 </div>
