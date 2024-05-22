@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     },
     {
-      name: "Postegre",
+      name: "PostgreSQL",
       expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     },

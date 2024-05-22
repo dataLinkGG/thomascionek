@@ -6,7 +6,6 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
-import { SendOutlined } from "@ant-design/icons";
 import { Button, Modal } from "antd";
 
 const About: React.FC = () => {
@@ -124,8 +123,10 @@ const About: React.FC = () => {
                       justifyContent: "flex-start",
                     }}
                   >
-                    <SendOutlined />
-                    <p>&nbsp;Full Stack Development</p>
+                    <ul>
+                      {/* <SendOutlined style={{ height: "1px" }} /> */}
+                      <p>-&nbsp;Full Stack Development</p>
+                    </ul>
                   </div>
                   <div
                     style={{
@@ -133,8 +134,8 @@ const About: React.FC = () => {
                       justifyContent: "flex-start",
                     }}
                   >
-                    <SendOutlined />
-                    <p>&nbsp;Freelancing Projects</p>
+                    {/* <SendOutlined /> */}
+                    <p>-&nbsp;Freelancing Projects</p>
                   </div>
                 </div>
               </div>
