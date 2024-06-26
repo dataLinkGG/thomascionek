@@ -1,21 +1,16 @@
 import { ReactElement } from "react";
+import styles from "./IconLink.module.css";
 
 type IconLinkProps = {
   url: string;
   altText?: string;
-  className?: string;
   children?: ReactElement;
 };
 
-const IconLink: React.FC<IconLinkProps> = ({
-  url,
-  altText,
-  className,
-  children,
-}) => {
+const IconLink: React.FC<IconLinkProps> = ({ url, altText, children }) => {
   return (
-    <a href={url} target="_blank">
-      {children ? children : <img src="" alt={altText} className={className} />}
+    <a href={url} target="_blank" className={styles.iconLink}>
+      {children ? children : <img src="" alt={altText} />}
     </a>
   );
 };

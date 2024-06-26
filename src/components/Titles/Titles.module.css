@@ -1,0 +1,44 @@
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle * {
+  margin: 0;
+}
+
+.sectionTitle p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.typewriter {
+  font-size: medium;
+  width: fit-content;
+  overflow: hidden;
+  border-right: 0.1em solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1.5s steps(27, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Animate to full width for left-to-right effect */
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--text-color);
+  }
+}

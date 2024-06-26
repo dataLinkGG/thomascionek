@@ -21,7 +21,7 @@ const HamburgerNav: React.FC = () => {
         </div>
         <ul className={`${styles.menuLinks} ${isOpen ? styles.open : ""}`}>
           <li>
-            <a href="#profile" onClick={toggleMenu}>
+            <a href="#home" onClick={toggleMenu}>
               Home
             </a>
           </li>
@@ -31,7 +31,7 @@ const HamburgerNav: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="#experience" onClick={toggleMenu}>
+            <a href="#skills" onClick={toggleMenu}>
               Skills
             </a>
           </li>

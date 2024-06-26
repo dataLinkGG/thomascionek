@@ -31,6 +31,7 @@ nav {
 }
 
 .menuLinks {
+  padding: 0;
   position: absolute;
   top: 100%;
   right: 0;
@@ -39,6 +40,8 @@ nav {
   max-height: 0;
   transition: all 0.3 ease-in-out;
   overflow: hidden;
+  border-radius: 1rem;
+  background-color: #00000067;
 }
 
 .menuLinks a {
@@ -86,10 +89,6 @@ nav {
 }
 
 .hamburgerIcon {
-  margin-left: 10px;
-}
-
-.hamburgerIcon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,6 +102,10 @@ nav {
   height: 2px;
   background-color: white;
   transition: all 0.3 ease-in-out;
+}
+
+.hamburgerIcon:hover * {
+  background-color: var(--primary-color);
 }
 
 .hamburgerIcon.open span:first-child {

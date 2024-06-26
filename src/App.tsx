@@ -1,14 +1,20 @@
-import { BackTop } from "antd";
-import { Home } from "./pages";
-import Navbar from "./components/NavBar/Navbar";
+import Nav from "./components/NavBar/Navbar";
+import AboutMe from "./pages/AboutMe";
+import ContactMe from "./pages/ContactMe";
+import MySkills from "./pages/MySkills";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <div className="container">
-      <Navbar />
-      <Home />
-      <BackTop />
-    </div>
+    <>
+      <main className="main-area">
+        <Nav />
+        <Profile />
+        <AboutMe />
+        <MySkills />
+        <ContactMe />
+      </main>
+    </>
   );
 }
 

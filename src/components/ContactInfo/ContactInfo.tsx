@@ -1,11 +1,13 @@
-import React, { useMemo } from "react";
+import React from "react";
 import type { DrawerProps } from "antd";
-import { Button, Drawer, Space, Tooltip, notification } from "antd";
-import { MailOutlined, WhatsAppOutlined } from "@ant-design/icons";
-import { NotificationPlacement } from "antd/es/notification/interface";
-import { EMAIL, PHONE, WHATSAPP } from "../../constants";
-
-const Context = React.createContext({ name: "Default" });
+import { Drawer, List, Divider, Tooltip } from "antd";
+import { DISCORD, WHATSAPP } from "../../constants";
+import IconLink from "../IconLink/IconLink";
+import AntButton from "../AntButton/AntButton";
+import qr_code from "../../assets/qr_black_white_rounded.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiscord, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const ContactInfo: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -32,79 +34,73 @@ const ContactInfo: React.FC = () => {
     setOpen(false);
   };
 
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard
-      .writeText(text)
-      .then(() => {
-        openNotification("topLeft");
-      })
-      .catch((error) => {
-        console.error("Error in copying text: ", error);
-      });
-  };
-
-  const [api, contextHolder] = notification.useNotification();
-
-  const openNotification = (placement: NotificationPlacement) => {
-    api.success({
-      message: "Copied!",
-      description: "The email address has been copied to the clipboard.",
-      placement,
-    });
-  };
-
-  const contextValue = useMemo(() => ({ name: "Ant Design" }), []);
-
   return (
-    <Context.Provider value={contextValue}>
-      {contextHolder}
-      <Button
-        className="AntButton1"
-        type="primary"
-        shape="round"
-        size={"large"}
-        onClick={showDrawer}
-      >
-        Contact info
-      </Button>
+    <>
+      <AntButton onClick={showDrawer}>Let's Talk</AntButton>
       <Drawer
         destroyOnClose
         title="Contact Information"
         placement="right"
         open={open}
-        width={500}
+        width={375}
         loading={loading}
         onClose={onClose}
-        extra={
-          <Space>
-            <Button type="primary" onClick={onClose}>
-              OK
-            </Button>
-          </Space>
-        }
       >
-        <div className="contact-info-upper-container">
-          <Tooltip placement="right" title={"Click to copy"}>
-            <div className="contact-info-container">
-              <Button type="text" onClick={() => copyToClipboard(EMAIL)}>
-                <MailOutlined />
-                {EMAIL}
-              </Button>
-            </div>
-          </Tooltip>
-          <Tooltip placement="right" title={"Click to copy"}>
-            <div className="contact-info-container">
-              <Button type="text" onClick={() => copyToClipboard(EMAIL)}>
-                <WhatsAppOutlined />
-                <a href={WHATSAPP} target="_blank">
-                  {PHONE}
+        <List
+          itemLayout="horizontal"
+          dataSource={[
+            {
+              title: "Email:",
+              content: (
+                <a href="href=mailto:“thomascionek97@gmail.com">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    color="black"
+                    style={{ width: "24px", height: "24px" }}
+                  />
                 </a>
-              </Button>
-            </div>
-          </Tooltip>
-        </div>
+              ),
+            },
+            {
+              title: "WhatsApp:",
+              content: (
+                <IconLink url={WHATSAPP} altText="WhatsApp">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    color="black"
+                    style={{ width: "24px", height: "24px" }}
+                  />
+                </IconLink>
+              ),
+            },
+            {
+              title: "Discord:",
+              content: (
+                <IconLink url={DISCORD} altText="Discord">
+                  <FontAwesomeIcon
+                    icon={faDiscord}
+                    color="black"
+                    style={{ width: "24px", height: "24px" }}
+                  />
+                </IconLink>
+              ),
+            },
+          ]}
+          renderItem={(item) => (
+            <List.Item>
+              <List.Item.Meta title={item.title} />
+              {item.content}
+            </List.Item>
+          )}
+        />
+        <Divider />
+        <Tooltip title="📱 Scan me!">
+          <div>
+            <img className="qr-code" src={qr_code} alt="" />
+          </div>
+        </Tooltip>
       </Drawer>
-    </Context.Provider>
+    </>
   );
 };
 

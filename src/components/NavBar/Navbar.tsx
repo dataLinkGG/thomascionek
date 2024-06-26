@@ -1,45 +1,100 @@
 import { useEffect, useState } from "react";
-import styles from "./Navbar.module.css";
-import myLogo from "../../assets/sign.svg";
+import { Menu, Affix, Anchor } from "antd";
 import HamburgerNav from "./HamburgerNav";
+
+const handleMenuClick = (e: { key: string }) => {
+  const targetSection = document.getElementById(e.key);
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+};
 
 const Nav = (): JSX.Element => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
+  const [currentSection, setCurrentSection] = useState<string>("");
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1400);
+    const handleScroll = () => {
+      const sections = ["home", "about", "skills", "contact"];
+      const scrollY = window.scrollY;
+      let newCurrentSection = "";
+
+      for (const section of sections) {
+        const sectionElement = document.getElementById(section);
+        if (sectionElement) {
+          const sectionTop = sectionElement.offsetTop;
+          const sectionHeight = sectionElement.offsetHeight;
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            newCurrentSection = section;
+            break;
+          }
+        }
+      }
+
+      setCurrentSection(newCurrentSection);
+    };
+
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
-  return (
-    <div className={styles.navigation}>
-      {isMobile ? (
-        <HamburgerNav />
-      ) : (
-        <nav className="desktopNav" id="desktopNav">
-          <div className={styles.logo}>
-            <img className="sign" src={myLogo} alt="" />
-          </div>
-          <div>
-            <ul className={styles.navLinks}>
-              <li>
-                <a href="#profile">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#experience">Skills</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      )}
-    </div>
+  return isMobile ? (
+    <HamburgerNav />
+  ) : (
+    <Affix>
+      <Anchor
+        replace
+        getCurrentAnchor={(activeLink) => {
+          const headerElement = document.getElementById("#home");
+          const headerHeight = headerElement ? headerElement.offsetHeight : 0;
+          const targetSection = document.getElementById(activeLink);
+          if (targetSection) {
+            return (targetSection.offsetTop + headerHeight).toString();
+          }
+          return "0";
+        }}
+      >
+        <Menu
+          style={{
+            background: "transparent",
+            position: "absolute",
+            height: "80px",
+            fontSize: "18px",
+            padding: "10px 20px",
+          }}
+          mode={"horizontal"}
+          onClick={handleMenuClick}
+          selectedKeys={[currentSection]}
+        >
+          <Menu.Item key="home">
+            <Anchor.Link title="" href="#home">
+              Home
+            </Anchor.Link>
+          </Menu.Item>
+          <Menu.Item key="about">
+            <Anchor.Link title="" href="#about">
+              About
+            </Anchor.Link>
+          </Menu.Item>
+          <Menu.Item key="skills">
+            <Anchor.Link title="" href="#skills">
+              Skills
+            </Anchor.Link>
+          </Menu.Item>
+          <Menu.Item key="contact">
+            <Anchor.Link title="" href="#contact">
+              Contact
+            </Anchor.Link>
+          </Menu.Item>
+        </Menu>
+      </Anchor>
+    </Affix>
   );
 };
 
