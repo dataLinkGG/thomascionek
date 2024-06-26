@@ -36,16 +36,16 @@ const ContactForm: React.FC = () => {
 
   const openWarningNotification = (placement: NotificationPlacement) => {
     api.warning({
-      message: "Message not sent...",
-      description: "Please fill out all fields.",
+      message: "Oops! Looks like you missed a field.",
+      description: "Fill them all out and try sending again.",
       placement,
     });
   };
 
   const openNotification = (placement: NotificationPlacement) => {
     api.success({
-      message: "Message sent!",
-      description: "Thanks for contacting me.",
+      message: "Your message is on its way!",
+      description: "Thanks for reaching out.",
       placement,
     });
   };

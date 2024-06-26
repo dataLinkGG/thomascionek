@@ -18,7 +18,7 @@ type SkillProps = {
   name: string;
   expertise?: number;
   children: React.ReactNode;
-  tooltipTitle?: string;
+  tooltipTitle?: React.ReactNode;
 };
 
 const Skill: React.FC<SkillProps> = ({
@@ -30,13 +30,13 @@ const Skill: React.FC<SkillProps> = ({
   const expertiseText = proficiencyMap[expertise as proficiencyLevel] ?? "";
 
   return (
-    <div className={styles.skill}>
-      <Tooltip title={tooltipTitle}>{children}</Tooltip>
+    <Tooltip className={styles.skill} title={tooltipTitle}>
+      {children}
       <div className={styles.skillDetails}>
         <div style={{ width: "fit-content" }}>{name}</div>
         <div className={styles[`proficiency${expertise}`]}>{expertiseText}</div>
       </div>
-    </div>
+    </Tooltip>
   );
 };
 

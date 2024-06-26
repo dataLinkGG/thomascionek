@@ -29,14 +29,25 @@ const MySkills = () => {
         <Skill
           name="Python"
           expertise={2}
-          tooltipTitle="Python is a high-level, general-purpose programming language known for its simplicity and vast standard library."
+          tooltipTitle={
+            <>
+              &ldquo;Simple is better than complex. Complex is better than
+              complicated.&rdquo; Python is a general-pourpese language known
+              for its simplicity and vast standard library.
+            </>
+          }
         >
           <img src={pythonIcon} />
         </Skill>
         <Skill
           name="PostegreSQL"
           expertise={1}
-          tooltipTitle="PostgreSQL is relational database management system that emphasizes extensibility and SQL compliance. It is known for its high levels of resilience, integrity, and correctness."
+          tooltipTitle={
+            <>
+              A relational database management system known for its high levels
+              of resilience, integrity, and correctness.
+            </>
+          }
         >
           <img src={postgresqlIcon} />
         </Skill>
@@ -48,7 +59,7 @@ const MySkills = () => {
         </Skill>
         <Skill
           name="React"
-          tooltipTitle="React is a JavaScript library that builds interfaces like chemistry: tiny, reusable components (atoms & buttons) combine to form bigger UI elements (molecules & forms)."
+          tooltipTitle="A JavaScript library that helps fabricate responsive GUIs just like chemistry. Small reusable UI components (like atoms) would bound together to form bigger UI elements."
         >
           <img src={reactIcon} />
         </Skill>
@@ -60,7 +71,7 @@ const MySkills = () => {
         </Skill>
         <Skill
           name="Git"
-          tooltipTitle="Just like a time traveler, Git allows going back to any previous version of your code, see what changes were made, restore an older version if needed and even creating different time-lines - the so called branches, or detached universes, thought a fork."
+          tooltipTitle="Imagine traveling back to any snapshot of file, inspect each changed line, authors, restore older versions when needed and even creating different time-lines (branches) or detached universes (repositories). That is not the time machine, that is just Git."
         >
           <img src={gitIcon} />
         </Skill>
@@ -76,7 +87,7 @@ const MySkills = () => {
 
         <Skill
           name="Vim"
-          tooltipTitle="Vim is a keyboard-focused editor with unique modes (command, insert, visual) for efficient editing without a mouse. Its shortcuts are transferable across many editors and tools."
+          tooltipTitle="Vim is a keyboard-focused editor with unique modes (command, insert, visual) that can enhance productivity and reduce ergonomic strain. However, the knowledge of vim motions extends beyond programming, possibly being embedded in editors, browsers, tools. Thus, making a powerful skill to have."
         >
           <img src={vimIcon} />
         </Skill>
