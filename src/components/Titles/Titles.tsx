@@ -23,7 +23,7 @@ export const HeroName: React.FC<HeroName> = ({ name, role }) => {
   return (
     <div className={styles.sectionTitle}>
       <h1>{name}</h1>
-      <p className={styles.typewriter}>{role}</p>
+      <div>{role}</div>
     </div>
   );
 };
