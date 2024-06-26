@@ -80,7 +80,13 @@ const MySkills = () => {
         </Skill>
         <Skill
           name="AntDesign"
-          tooltipTitle="A design language and a set of UI components for building scalable and maintainable applications."
+          tooltipTitle={
+            <>
+              A design language and UI component library that helps developers
+              build scalable and maintainable applications. This website itself
+              is built using some components from Ant Design.
+            </>
+          }
         >
           <img src={antdesignIcon} />
         </Skill>
