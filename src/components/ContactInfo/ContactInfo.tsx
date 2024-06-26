@@ -52,7 +52,7 @@ const ContactInfo: React.FC = () => {
             {
               title: "Email:",
               content: (
-                <a href="href=mailto:“thomascionek97@gmail.com">
+                <a href="smailto:“thomascionek97@gmail.com">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     color="black"
