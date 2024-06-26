@@ -87,7 +87,7 @@ const MySkills = () => {
 
         <Skill
           name="Vim"
-          tooltipTitle="Vim is a keyboard-focused editor with unique modes (command, insert, visual) that can enhance productivity and reduce ergonomic strain. However, the knowledge of vim motions extends beyond programming, possibly being embedded in editors, browsers, tools. Thus, making a powerful skill to have."
+          tooltipTitle="Vim is a keyboard-focused editor with unique modes (command, insert, visual) that can enhance productivity and reduce ergonomic strain. However, the knowledge of vim motions extends beyond programming, possibly being embedded in editors, browsers, tools."
         >
           <img src={vimIcon} />
         </Skill>
