@@ -22,7 +22,13 @@ const MySkills = () => {
         <Skill
           name="JavaScript"
           expertise={3}
-          tooltipTitle="JavaScript, which started as a scripting language, is now widely used to enhance web page functionality, including animations, dynamic content updates, and user interactions."
+          tooltipTitle={
+            <>
+              JavaScript, which started as a scripting language, is now widely
+              used to enhance web page functionality, including animations,
+              dynamic content updates, and user interactions.
+            </>
+          }
         >
           <img src={javascriptIcon} />
         </Skill>
@@ -53,13 +59,25 @@ const MySkills = () => {
         </Skill>
         <Skill
           name="TypeScript"
-          tooltipTitle="TypeScript is a superset of JavaScript that adds optional static type annotations, which can make the development of large-scale applications safer and more scalable."
+          tooltipTitle={
+            <>
+              TypeScript is a superset of JavaScript that adds optional static
+              type annotations, which can make the development of large-scale
+              applications safer and more scalable.
+            </>
+          }
         >
           <img src={typescriptIcon} />
         </Skill>
         <Skill
           name="React"
-          tooltipTitle="A JavaScript library that helps fabricate responsive GUIs just like chemistry. Small reusable UI components (like atoms) would bound together to form bigger UI elements."
+          tooltipTitle={
+            <>
+              A JavaScript library that helps fabricate responsive GUIs just
+              like chemistry. Small reusable UI components (like atoms) would
+              bound together to form bigger UI elements.
+            </>
+          }
         >
           <img src={reactIcon} />
         </Skill>
@@ -91,7 +109,14 @@ const MySkills = () => {
         </Skill>
         <Skill
           name="Git"
-          tooltipTitle="Imagine traveling back to any snapshot of file, inspect each changed line, authors, restore older versions when needed and even creating different time-lines (branches) or detached universes (repositories). That is not the time machine, that is just Git."
+          tooltipTitle={
+            <>
+              Imagine traveling back to any snapshot of file, inspect each
+              changed line, authors, restore older versions when needed and even
+              creating different time-lines (branches) or detached universes
+              (repositories). That is not the time machine, that is just Git.
+            </>
+          }
         >
           <img src={gitIcon} />
         </Skill>
@@ -123,13 +148,27 @@ const MySkills = () => {
 
         <Skill
           name="Vim"
-          tooltipTitle="Vim is a keyboard-focused editor with unique modes (command, insert, visual) that can enhance productivity and reduce ergonomic strain. However, the knowledge of vim motions extends beyond programming, possibly being embedded in editors, browsers, tools."
+          tooltipTitle={
+            <>
+              Vim is a keyboard-focused editor with unique modes (command,
+              insert, visual) that can enhance productivity and reduce ergonomic
+              strain. However, the knowledge of vim motions extends beyond
+              programming, possibly being embedded in editors, browsers, tools.
+            </>
+          }
         >
           <img src={vimIcon} />
         </Skill>
         <Skill
           name="Docker"
-          tooltipTitle="Docker packages apps in self-contained containers built from images. Imagine Lego bricks for software - each container runs isolated, sharing the host's OS. Volumes store data outside containers, so it persists even when they stop or restart."
+          tooltipTitle={
+            <>
+              Docker packages apps in self-contained containers built from
+              images. Imagine Lego bricks for software - each container runs
+              isolated, sharing the host's OS. Volumes store data outside
+              containers, so it persists even when they stop or restart.
+            </>
+          }
         >
           <img src={dockerIcon} />
         </Skill>
