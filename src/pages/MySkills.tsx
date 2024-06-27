@@ -76,7 +76,17 @@ const MySkills = () => {
         >
           <img src={flaskIcon} />
         </Skill>
-        <Skill name="Linux">
+        <Skill
+          name="Linux"
+          tooltipTitle={
+            <>
+              Linux is a free and open-source operating system kernel. Unlike a
+              complete operating system like Windows or macOS, Linux is the core
+              software that manages hardware resources and provides a foundation
+              for other programs to run.
+            </>
+          }
+        >
           <img src={linuxIcon} />
         </Skill>
         <Skill
@@ -85,17 +95,7 @@ const MySkills = () => {
         >
           <img src={gitIcon} />
         </Skill>
-        <Skill
-          name="Figma"
-          tooltipTitle={
-            <>
-              Figma is a web-based collaborative interface design tool with a
-              free plan and premium options. It offers features for UI/UX
-              design, including prototyping, real-time collaboration, design
-              system management, and vector graphics editing.
-            </>
-          }
-        >
+        <Skill name="Figma">
           <img src={figmaIcon} />
         </Skill>
         <Skill
