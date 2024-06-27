@@ -95,7 +95,17 @@ const MySkills = () => {
         >
           <img src={gitIcon} />
         </Skill>
-        <Skill name="Figma">
+        <Skill
+          name="Figma"
+          tooltipTitle={
+            <>
+              Figma is a web-based collaborative interface design tool with a
+              free plan and premium options. It offers features for UI/UX
+              design, including prototyping, real-time collaboration, design
+              system management, and vector graphics editing.
+            </>
+          }
+        >
           <img src={figmaIcon} />
         </Skill>
         <Skill
