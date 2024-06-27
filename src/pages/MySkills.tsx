@@ -63,7 +63,17 @@ const MySkills = () => {
         >
           <img src={reactIcon} />
         </Skill>
-        <Skill name="Flask">
+        <Skill
+          name="Flask"
+          tooltipTitle={
+            <>
+              Flask is a microframework for web development written in Python.
+              Unlike larger frameworks, Flask has a minimalist design, offering
+              a core set of features and relying on extensions for additional
+              functionalities.
+            </>
+          }
+        >
           <img src={flaskIcon} />
         </Skill>
         <Skill name="Linux">
