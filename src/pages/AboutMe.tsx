@@ -17,12 +17,25 @@ const AboutMe = () => {
           icon={faBriefcase}
           modalTitle={"Experience"}
         >
-          Worked with <b>Python</b>, <b>JavaScript</b>, and <b>PostgreSQL</b>.
-          Interactively customized TypeScript React components from Ant Design
-          based on the product models of Figma, working in Scrum methodology,
-          with Code Reviews, product and team retrospectives meetings.
-          Engagingly implemented back-end library functionalities and actively
-          interacted with the database.
+          <ul>
+            <li>
+              Over 1,000 approved contributions GitHub in Python, JavaScript,
+              and PostgreSQL.
+            </li>
+            <li>
+              Personalized React components to seamlessly match Figma UX
+              designs, ensuring a pixel-perfect user experience.
+            </li>
+            <li>
+              Implemented functionalities within back-end libraries using
+              Python, demonstrating strong problem-solving and coding skills.
+            </li>
+            <li>
+              Provided exceptional customer support for one month, including
+              intensive database handling to resolve technical issues
+              efficiently.
+            </li>
+          </ul>
         </Card>
         <Card
           title="Education"
