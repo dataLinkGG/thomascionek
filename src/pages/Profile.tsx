@@ -2,7 +2,6 @@ import AntButton from "../components/AntButton/AntButton";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import HeroPic from "../components/HeroPic/HeroPic";
 import { HeroName } from "../components/Titles/Titles";
-import styles from "./pages.module.css";
 import { Tooltip } from "antd";
 
 import { DownOutlined } from "@ant-design/icons";
@@ -15,9 +14,9 @@ const Profile = () => {
 
   return (
     <section id="home" className="centered">
-      <div className={styles.hero}>
+      <div className="hero">
         <HeroPic />
-        <div className={styles.section__text}>
+        <div className="section__text">
           <HeroName name="Thomas Cionek" role={ROLE} />
           <div className="btn-container">
             <AntButton
