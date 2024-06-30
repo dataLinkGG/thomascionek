@@ -20,12 +20,10 @@ const SimpleForm = () => {
           console.log("SUCCESS!");
         } catch (error) {
           console.error("FAILED...", error);
-          // Display a user-friendly error message
           alert("Failed to send email. Please try again later.");
         }
       } else {
         console.error("Form element not yet available");
-        // Display a user-friendly error message
         alert("Failed to send email. Please try again later.");
       }
     }
