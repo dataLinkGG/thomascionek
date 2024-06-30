@@ -19,7 +19,7 @@ const AboutMe = () => {
         >
           <ul>
             <li>
-              Over 1,000 approved contributions GitHub in Python, JavaScript,
+              Over 10,000 approved GitHub contributions in Python, JavaScript,
               and PostgreSQL.
             </li>
             <li>
