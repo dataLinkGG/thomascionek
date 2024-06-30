@@ -43,11 +43,26 @@ const AboutMe = () => {
           icon={faGraduationCap}
           modalTitle={"Education"}
         >
-          Solid foundation in Linux, having used various distributions for
-          nearly 10 years, with a keen interest in experimenting with commands,
-          customization, and troubleshooting. Gained international exposure
-          during a 4-year stint in Poland, where he studied Computer Science and
-          interacted with exchange students from around the world.
+          <ul>
+            <li>
+              <b>Systems Analysis and Development</b>
+              <br />
+              Universidade Positivo · June 2022 - June 2024 · Curitiba, Brazil
+            </li>
+            <br />
+            <li>
+              <b>Computer Science</b>
+              <br />
+              Politechnika Wrocławska · June 2017 - June 2022 · Wrocław, Poland
+            </li>
+            <br />
+            <li>
+              <b>Electrical Engineering with Emphasis on Embedded Systems </b>
+              <br />
+              Universidade Federal do Paraná · January 2016 - June 2017 ·
+              Curitiba, Brazil
+            </li>
+          </ul>
         </Card>
         <Card
           title="Goals"
