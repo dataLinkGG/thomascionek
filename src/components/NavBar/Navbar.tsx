@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, Affix, Anchor } from "antd";
-import HamburgerNav from "./HamburgerNav";
+import styles from "./Navbar.module.css";
 
 const handleMenuClick = (e: { key: string }) => {
   const targetSection = document.getElementById(e.key);
@@ -12,6 +12,11 @@ const handleMenuClick = (e: { key: string }) => {
 const Nav = (): JSX.Element => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
   const [currentSection, setCurrentSection] = useState<string>("");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1400);
@@ -45,7 +50,32 @@ const Nav = (): JSX.Element => {
   }, []);
 
   return isMobile ? (
-    <HamburgerNav />
+    <div id="hamburgerNav">
+      <div className={styles.hamburgerMenu}>
+        <div
+          className={`${styles.hamburgerIcon} ${isOpen ? styles.open : ""}`}
+          onClick={toggleMenu}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
+        <ul className={`${styles.menuLinks} ${isOpen ? styles.open : ""}`}>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   ) : (
     <Affix>
       <Anchor
