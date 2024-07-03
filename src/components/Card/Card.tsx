@@ -50,7 +50,8 @@ const Card: React.FC<CardProps> = ({
               onClick={() => setModalOpen(true)}
             >
               <div>
-                <FontAwesomeIcon icon={faSearch} /> See More
+                <FontAwesomeIcon icon={faSearch} />
+                See More
               </div>
             </Button>
           </ConfigProvider>
@@ -63,7 +64,7 @@ const Card: React.FC<CardProps> = ({
             cancelText="Close"
             footer
           >
-            <p style={{ color: "black" }}> {children}</p>
+            <p style={{ color: "black" }}>{children}</p>
           </Modal>
         </>
       ) : undefined}
