@@ -54,7 +54,6 @@ const Card: React.FC<CardProps> = ({
               </div>
             </Button>
           </ConfigProvider>
-
           <Modal
             title={modalTitle}
             open={modalOpen}
