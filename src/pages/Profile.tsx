@@ -34,7 +34,9 @@ const Profile = () => {
               <LinkedinOutlined className="largeIcon" />
             </IconLink>
             <IconLink url={GITHUB} altText="My Github profile">
-              <GithubOutlined className="largeIcon" />
+              <Tooltip title="Check out my projects!" placement="right">
+                <GithubOutlined className="largeIcon" />
+              </Tooltip>
             </IconLink>
           </div>
         </div>
