@@ -5,6 +5,8 @@ import MySkills from "./pages/MySkills";
 import Profile from "./pages/Profile";
 
 function App() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <main>
@@ -16,8 +18,8 @@ function App() {
       </main>
       <footer>
         <p>
-          © 2024 | This website was powered by Vite and deployed on Github
-          Pages.
+          © {currentYear} | This website was powered by Vite and deployed on
+          Github Pages.
         </p>
       </footer>
     </>
