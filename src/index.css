@@ -50,7 +50,6 @@ footer {
   main {
     flex: 1 1 auto;
     order: 1;
-    height: 100vh;
   }
   .cards {
     display: flex;
