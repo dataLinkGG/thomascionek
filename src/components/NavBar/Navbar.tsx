@@ -94,9 +94,12 @@ const Nav = (): JSX.Element => {
           style={{
             background: "transparent",
             position: "absolute",
+            width: "100%",
             height: "80px",
             fontSize: "18px",
             padding: "10px 20px",
+            display: "flex",
+            justifyContent: "center",
           }}
           mode={"horizontal"}
           onClick={handleMenuClick}
