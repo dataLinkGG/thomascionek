@@ -37,6 +37,15 @@ label {
   color: var(--text-color);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10rem;
+  background-color: black;
+}
+
 @media screen and (min-width: 40em) {
   main {
     flex: 1 1 auto;

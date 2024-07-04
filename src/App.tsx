@@ -14,6 +14,7 @@ function App() {
         <MySkills />
         <ContactMe />
       </main>
+      <footer>A</footer>
     </>
   );
 }
