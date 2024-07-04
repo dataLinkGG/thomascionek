@@ -9,8 +9,10 @@ function App() {
 
   return (
     <>
-      <main>
+      <header>
         <Nav />
+      </header>
+      <main>
         <Profile />
         <AboutMe />
         <MySkills />
