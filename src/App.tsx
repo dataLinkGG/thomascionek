@@ -14,7 +14,12 @@ function App() {
         <MySkills />
         <ContactMe />
       </main>
-      <footer>A</footer>
+      <footer>
+        <p>
+          © 2024 | This website was powered by Vite and deployed on Github
+          Pages.
+        </p>
+      </footer>
     </>
   );
 }
