@@ -7,7 +7,7 @@ import Profile from "./pages/Profile";
 function App() {
   return (
     <>
-      <main className="main-area">
+      <main>
         <Nav />
         <Profile />
         <AboutMe />
