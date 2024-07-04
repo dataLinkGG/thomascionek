@@ -38,11 +38,6 @@ label {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 10rem;
   background-color: black;
   color: white;
   padding: 1rem;
