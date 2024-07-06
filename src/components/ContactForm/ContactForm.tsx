@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { notification } from "antd";
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, notification } from "antd";
 import { NotificationPlacement } from "antd/es/notification/interface";
 
 const layout = {
