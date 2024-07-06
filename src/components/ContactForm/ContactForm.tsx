@@ -1,14 +1,11 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { notification } from "antd";
-
 import { Button, Form, Input } from "antd";
 import { NotificationPlacement } from "antd/es/notification/interface";
 
 const layout = {
   labelCol: { span: 8 },
 };
-
-const Context = React.createContext({ name: "Default" });
 
 /* eslint-disable no-template-curly-in-string */
 const validateMessages = {
@@ -56,10 +53,8 @@ const ContactForm: React.FC = () => {
     } else openNotification("topLeft");
   };
 
-  const contextValue = useMemo(() => ({ name: "Ant Design" }), []);
-
   return (
-    <Context.Provider value={contextValue}>
+    <>
       {contextHolder}
       <Form
         {...layout}
@@ -101,7 +96,7 @@ const ContactForm: React.FC = () => {
           </Button>
         </Form.Item>
       </Form>
-    </Context.Provider>
+    </>
   );
 };
 
