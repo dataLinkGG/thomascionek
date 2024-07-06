@@ -3,7 +3,6 @@ import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import HeroPic from "../components/HeroPic/HeroPic";
 import { HeroName } from "../components/Titles/Titles";
 import { Tooltip } from "antd";
-
 import { DownOutlined } from "@ant-design/icons";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN, ROLE } from "../constants";
