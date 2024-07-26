@@ -12,13 +12,13 @@ type CardProps = {
   children?: React.ReactNode;
 };
 
-const Card: React.FC<CardProps> = ({
+const Card = ({
   title,
   description,
   icon,
   modalTitle,
   children,
-}) => {
+}: CardProps): JSX.Element => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
