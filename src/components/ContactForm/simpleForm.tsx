@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const SimpleForm = () => {
+const SimpleForm = (): JSX.Element => {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
