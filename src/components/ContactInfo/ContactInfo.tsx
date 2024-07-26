@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const ContactInfo: React.FC = () => {
+const ContactInfo = (): JSX.Element => {
   const [open, setOpen] = React.useState(false);
   const [loading, setLoading] = React.useState<DrawerProps["loading"]>(true);
   const timerRef = React.useRef<ReturnType<typeof setTimeout>>();
