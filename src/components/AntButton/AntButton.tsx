@@ -4,7 +4,7 @@ import React from "react";
 type AntButtonProps = {
   children: React.ReactNode;
   onClick?: VoidFunction;
-  type?: "primary" | "text"; // Add type prop to specify button type
+  type?: "primary" | "text";
 };
 
 const AntButton: React.FC<AntButtonProps> = ({
