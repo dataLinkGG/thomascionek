@@ -13,8 +13,7 @@ Here is what I have used in this project:
 - TypeScript for type safety
 - CSS for my own customization
 - Vite for creating and building the app
-- gh-pages for helping me deploy
-- GitHub pages
+- Github pages for helping me deploy
 - ESLint rules
 - Ant Design components and icons
 - Font Awesome icons
