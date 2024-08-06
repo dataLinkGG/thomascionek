@@ -2,7 +2,7 @@
 
 This project is meant not only to display my personal information for recruiters but also to be a showcase of the knowledge I have acquired during my studies and professional experience.
 
-Overall, I have been trying my best to balance good coding practices and also build something on my own.
+Overall, I have been trying my best to balance good coding practices and simplicity.
 
 🚀 Live Preview:
 https://datalinkgg.github.io/thomascionek/
