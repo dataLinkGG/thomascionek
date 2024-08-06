@@ -18,3 +18,4 @@ Here is what I have used in this project:
 - Ant Design components and icons
 - Font Awesome icons
 - Git for version control
+- Flex box concepts for responsiveness
