@@ -13,9 +13,58 @@ Here is what I have used in this project:
 - TypeScript for type safety
 - CSS for my own customization
 - Vite for creating and building the app
+- Bun for installs and running scripts
 - Github pages for helping me deploy
 - ESLint rules
 - Ant Design components and icons
 - Font Awesome icons
 - Git for version control
 - Flex box concepts for responsiveness
+
+## Build and deploy
+
+This app is a Vite + React project. The production base path is `/thomascionek` (see `vite.config.ts`), which matches a GitHub Pages **project site** at `https://<user>.github.io/thomascionek/`.
+
+### Prerequisites
+
+- [Bun](https://bun.sh/) (runtime and package manager).
+
+### Install
+
+```bash
+bun install
+```
+
+### Local development
+
+```bash
+bun run dev
+```
+
+### Production build
+
+Runs TypeScript checking, then Vite build. Output goes to `dist/`.
+
+```bash
+bun run build
+```
+
+To preview the built site locally:
+
+```bash
+bun run preview
+```
+
+### Deploy to GitHub Pages
+
+The [gh-pages](https://github.com/tschaub/gh-pages) package pushes the contents of `dist/` to the `gh-pages` branch of the configured `origin` remote.
+
+```bash
+bun run deploy
+```
+
+`deploy` runs `predeploy` first, which executes `bun run build`, so you get a fresh build before publish.
+
+**Repository settings:** In GitHub → **Settings** → **Pages**, set the source to the **`gh-pages`** branch (folder `/` root). The live URL is the `homepage` value in `package.json` (currently `https://dataLinkGG.github.io/thomascionek/`).
+
+**Note:** You must be able to push to `origin` (SSH or HTTPS with credentials). The first deploy may create the `gh-pages` branch.
