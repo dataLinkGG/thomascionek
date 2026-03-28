@@ -28,6 +28,9 @@ This app is a Vite + React project. The production base path is `/thomascionek` 
 ### Prerequisites
 
 - [Bun](https://bun.sh/) (runtime and package manager).
+- [Node.js](https://nodejs.org/) v20.19+ or v22.12+ (required by Vite 8)
+
+> **Note:** Bun uses your system Node.js to run Vite. You can manage Node versions with [fnm](https://github.com/Schniz/fnm) or [nvm](https://github.com/nvm-sh/nvm).
 
 ### Install
 
